@@ -88,7 +88,7 @@ const SectionHeader = () => {
               "py-4 px-6 mt-6 font-bold"
             )}
           >
-            Get Started for free
+            {t("getStartedForFree")}
           </button>
         </div>
       </div>

@@ -20,5 +20,6 @@
         "workflows": "workflows",
         "collaboration": "collaboration"
     },
-    "headerText": "dyrector.io is an open source next-gen platform where you can build and scale microservices without vendor lock-in. Level up your deployments with PaaS like experience and focus only what matters."
+    "headerText": "dyrector.io is an open source next-gen platform where you can build and scale microservices without vendor lock-in. Level up your deployments with PaaS like experience and focus only what matters.",
+    "getStartedForFree": "Get Started for free"
 }
