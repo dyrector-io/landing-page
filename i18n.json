@@ -1,0 +1,9 @@
+{
+    "logBuild": false,
+    "locales": ["en"],
+    "defaultLocale": "en",
+    "pages": {
+      "*": ["common", "head"]
+    }
+  }
+  
