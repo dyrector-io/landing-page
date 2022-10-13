@@ -16,5 +16,10 @@
 
     "logoAlt": "dyrector.io",
     "githubAlt": "GitHub",
-    "discordAlt": "Discord"
+    "discordAlt": "Discord",
+
+    "copyright": "©2022 Copyright Reserved by dyrector.io",
+    "termsOfUse": "Terms of use",
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy"
 }

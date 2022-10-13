@@ -1,39 +1,42 @@
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { DISCORD_INVITE } from "../../const";
+import {
+  BLOG_URL,
+  CHANGELOG_URL,
+  DISCORD_INVITE,
+  DOCS_URL,
+  GITHUB_URL,
+} from "../../const";
 
 const DyoNavbar = () => {
-  const router = useRouter();
   const { t } = useTranslation("common");
 
   return (
     <div className="px-28 py-11 flex items-center">
-      <div className="w-36 cursor-pointer" onClick={() => router.push("/")}>
-        <Image src="/logo.svg" width="140px" height="46px" alt={t("logoAlt")} />
+      <div className="w-36 cursor-pointer">
+        <a href="/">
+          <Image
+            src="/logo.svg"
+            width="140px"
+            height="46px"
+            alt={t("logoAlt")}
+          />
+        </a>
       </div>
       <a
         className="ml-auto px-8 text-lg font-bold cursor-pointer"
-        href="https://docs.dyrector.io/"
+        href={DOCS_URL}
       >
         {t("docs")}
       </a>
-      <a
-        className="px-8 text-lg font-bold cursor-pointer"
-        href="https://blog.dyrector.io/"
-      >
+      <a className="px-8 text-lg font-bold cursor-pointer" href={BLOG_URL}>
         {t("blog")}
       </a>
-      <a
-        className="px-8 text-lg font-bold cursor-pointer"
-        href="https://github.com/dyrector-io/dyrectorio/blob/develop/CHANGELOG.md"
-      >
+      <a className="px-8 text-lg font-bold cursor-pointer" href={CHANGELOG_URL}>
         {t("changelog")}
       </a>
-      <a
-        className="pl-10 h-[18px] cursor-pointer"
-        href="https://github.com/dyrector-io/dyrectorio"
-      >
+      <a className="pl-10 h-[18px] cursor-pointer" href={GITHUB_URL}>
         <Image
           className="py-auto"
           src="/logo-github.svg"
