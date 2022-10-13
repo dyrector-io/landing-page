@@ -1,2 +1,24 @@
 {
+    "compassFor": "Compass for",
+    "compassForItems": {
+        "containers": "containers",
+        "kubernetes": "kubernetes",
+        "engineers": "engineers",
+        "developers": "developers",
+        "managers": "managers",
+        "releases": "releases",
+        "pipelines": "pipelines",
+        "versions": "versions",
+        "applications": "applications",
+        "services": "services",
+        "configs": "configs",
+        "products": "products",
+        "microservices": "microservices",
+        "code": "code",
+        "databases": "databases",
+        "tickets": "tickets",
+        "workflows": "workflows",
+        "collaboration": "collaboration"
+    },
+    "headerText": "dyrector.io is an open source next-gen platform where you can build and scale microservices without vendor lock-in. Level up your deployments with PaaS like experience and focus only what matters."
 }

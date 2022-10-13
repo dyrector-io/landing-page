@@ -3,3 +3,60 @@
   min-height: 100vh;
   background: linear-gradient(134.71deg, #070954 -12.52%, #090422 69.59%);
 }
+
+.world {
+  background-image: url('/world.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(273.79deg, #FFFFFF -48.65%, #067090 111.85%);
+  -webkit-text-fill-color: transparent;
+  background-size: 100%;
+}
+
+.button-gradient {
+  background: linear-gradient(97.23deg, #067090 -5.85%, #2A85A0 41.65%, #FFFFFF 319.54%);
+}
+
+.animate-fade-out {
+  animation: fadeOut 0.5s forwards;
+  background-image: linear-gradient(273.79deg, #FFFFFF -48.65%, #067090 151.85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: absolute;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s forwards;
+  background-image: linear-gradient(273.79deg, #FFFFFF -48.65%, #067090 171.85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: absolute;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
