@@ -1,3 +1,20 @@
 {
+    "company": "Company",
+    "community": "Community",
+    "getInTouch": "Get in touch",
     
+    "career": "Career",
+    "home": "Home",
+    "docs": "Docs",
+    "blog": "Blog",
+    "changelog": "Changelog",
+    
+    "discord": "Discord",
+    "github": "Github",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn",
+
+    "logoAlt": "dyrector.io",
+    "githubAlt": "GitHub",
+    "discordAlt": "Discord"
 }

@@ -3,7 +3,8 @@
     "locales": ["en"],
     "defaultLocale": "en",
     "pages": {
-      "*": ["common", "head"]
+      "*": ["common", "head", "footer"],
+      "/": ["index"]
     }
   }
   

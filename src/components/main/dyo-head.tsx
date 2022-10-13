@@ -1,14 +1,14 @@
-import useTranslation from 'next-translate/useTranslation'
-import Head from 'next/head'
+import useTranslation from "next-translate/useTranslation";
+import Head from "next/head";
 
 const DyoHead = () => {
-  const { t } = useTranslation('head')
+  const { t } = useTranslation("head");
 
   return (
     <Head>
       <meta charSet="utf-8" />
-      <title>{t('title')}</title>
-      <meta name="description" content={t('description')} />
+      <title>{t("title")}</title>
+      <meta name="description" content={t("description")} />
       <meta property="og:title" content="dyrector.io" />
       <meta property="og:type" content="article" />
       <meta property="og:url" content="https://dyrector.io" />
@@ -17,11 +17,11 @@ const DyoHead = () => {
         property="og:image"
         content="https://dyrector.io/static/809f32056da442775de4876cfb542903/c3cd8/home-hero-illustration.webp"
       />
-      <meta property="og:description" content={t('ogDescription')} />
+      <meta property="og:description" content={t("ogDescription")} />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://dyrector.io" />
     </Head>
-  )
-}
+  );
+};
 
-export default DyoHead
+export default DyoHead;
