@@ -99,17 +99,19 @@ const SectionIntegrations = () => {
   const onAnimationEnd = () => {
     let { cells: cellList, width } = cells
     cellList.forEach(it => {
-      let cellX = cellPositionRef.current[it.key] ?? it.x
-      if (cellX <= 0) {
-        cellX = width - 1
-        if (it.imageRef && it.imageRef.current) {
-          it.imageRef.current!.src = getRandomLogo()
+      if (it.ref.current) {
+        let cellX = cellPositionRef.current[it.key] ?? it.x
+        if (cellX <= 0) {
+          cellX = width - 1
+          if (it.imageRef && it.imageRef.current) {
+            it.imageRef.current!.src = getRandomLogo()
+          }
+        } else {
+          cellX -= 1
         }
-      } else {
-        cellX -= 1
+        cellPositionRef.current[it.key] = cellX
+        it.ref.current!.style.left = `${cellX * 120}px`
       }
-      cellPositionRef.current[it.key] = cellX
-      it.ref.current!.style.left = `${cellX * 120}px`
     })
     animation.current!.play()
   }
