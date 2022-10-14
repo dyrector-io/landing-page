@@ -1,6 +1,6 @@
-import "../styles/globals.css";
-import type { AppProps } from "next/app";
-import DyoHead from "../components/main/dyo-head";
+import '../styles/globals.css'
+import type { AppProps } from 'next/app'
+import DyoHead from '../components/main/dyo-head'
 
 function DyoLanding({ Component, pageProps }: AppProps) {
   return (
@@ -8,7 +8,7 @@ function DyoLanding({ Component, pageProps }: AppProps) {
       <DyoHead />
       <Component {...pageProps} />
     </>
-  );
+  )
 }
 
-export default DyoLanding;
+export default DyoLanding

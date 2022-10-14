@@ -21,5 +21,19 @@
         "collaboration": "collaboration"
     },
     "headerText": "dyrector.io is an open source next-gen platform where you can build and scale microservices without vendor lock-in. Level up your deployments with PaaS like experience and focus only what matters.",
-    "getStartedForFree": "Get Started for free"
+    "getStartedForFree": "Get Started for free",
+    "integrationsToWorkflow": [
+        [
+            "Add ",
+            {
+                "text": "seamless intergrations",
+                "gradient": true
+            },
+            " to your"
+        ],
+        [
+            "existing development workflow"
+        ]
+    ],
+    "integrationsDetails": "dyrector.io connects to the tools you use every day, with more added each month. Browse our full list of integrations, including Gitlab, Github, Slack, and Discord."
 }
