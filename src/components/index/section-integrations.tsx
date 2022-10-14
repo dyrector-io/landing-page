@@ -142,19 +142,23 @@ const SectionIntegrations = () => {
     }) as string[][]
     return (
       <>
-        {text.map(it => (
-          <div className="font-sans-pro font-bold text-4xl text-center">
-            {it.map(text => {
+        {text.map((it, index) => (
+          <div key={index} className="font-sans-pro font-bold text-4xl text-center">
+            {it.map((text, index) => {
               if (typeof text === 'string') {
-                return text
+                return <label key={index}>{text}</label>
               }
 
               const object = text as { text: string; gradient: boolean }
               if (!object.gradient) {
-                return object.text
+                return <label key={index}>{object.text}</label>
               }
 
-              return <div className={clsx(styles['text-gradient'], 'inline')}>{object.text}</div>
+              return (
+                <div key={index} className="text-gradient inline">
+                  {object.text}
+                </div>
+              )
             })}
           </div>
         ))}
