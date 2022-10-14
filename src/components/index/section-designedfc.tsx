@@ -1,0 +1,30 @@
+import clsx from 'clsx'
+import useTranslation from 'next-translate/useTranslation'
+import Image from 'next/image'
+
+const SectionDesignedfc = () => {
+  const { t } = useTranslation('index')
+
+  const items = ['orchestration', 'agility', 'cloud', 'cont-integration', 'release-mg']
+
+  return (
+    <div className="text-center mx-auto my-24 max-w-6xl">
+      <div className="pt-9 text-slate-300 bold text-xl font-bold max-w-lg mx-auto">
+        {t('designedForCompanies.title')}
+      </div>
+      <div className="pt-16 flex justify-between">
+        {items.map((it, index) => (
+          <div className="flex flex-col w-48" key={it}>
+            <Image src={`/icon-${it}.svg`} layout="intrinsic" width={50} height={50} />
+            <label key={index} className="text-slate-300 text-sm uppercase pt-4">
+              {t(`designedForCompanies.companies.${it}`)}
+            </label>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export default SectionDesignedfc
+
