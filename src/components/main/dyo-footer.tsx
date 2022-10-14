@@ -53,7 +53,7 @@ const DyoFooter = () => {
 
   return (
     <>
-      <div className="px-12 flex flex-wrap mb-20">
+      <div className="px-12 flex flex-wrap mb-20 pt-48">
         <div className="flex-auto basis-full md:basis-1/2 lg:basis-2/6">
           <Image src="/logo.svg" width="140px" height="46px" alt={t('common:logoAlt')} />
         </div>

@@ -70,7 +70,7 @@ const SectionHeader = () => {
         </div>
         <label>{t('headerText')}</label>
         <div>
-          <button className={clsx(styles['button-gradient'], 'py-4 px-6 mt-6 font-bold')}>
+          <button className={clsx(styles['button-gradient'], 'py-4 px-6 mt-6 font-bold rounded-sm')}>
             {t('getStartedForFree')}
           </button>
         </div>

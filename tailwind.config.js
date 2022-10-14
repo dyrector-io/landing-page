@@ -11,6 +11,7 @@ module.exports = {
                 'dyo-purple': '#540ba7',
                 'dyo-purple-light': '#e1ccf8',
                 'dyo-blue': '#00cfe8',
+                'dyo-light-blue': '#067090',
                 'bright': "#d0d2d6",
                 'bright-muted': '#676d7d',
                 'light-eased': '#b4b7bd',
