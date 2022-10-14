@@ -7,7 +7,7 @@ import SectionIntegrations from '../components/index/section-integrations'
 
 const Index: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div className="w-full min-h-screen">
       <DyoNavbar />
       <SectionHeader />
       <SectionIntegrations />

@@ -4,7 +4,8 @@
     "defaultLocale": "en",
     "pages": {
       "*": ["common", "head", "footer"],
-      "/": ["index"]
+      "/": ["index"],
+      "/tos": ["tos"]
     }
   }
   

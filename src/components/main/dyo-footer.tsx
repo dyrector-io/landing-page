@@ -86,13 +86,13 @@ const DyoFooter = () => {
           <Column label={t('common:career')}>{t('careerText')}</Column>
         </div>
       </div>
-      <div className="px-12 flex flex-row flex-wrap">
+      <div className="px-12 flex flex-row flex-wrap pb-5">
         <label className="basis-full text-center lg:text-left lg:basis-auto">{t('common:copyright')}</label>
         <label
           className="cursor-pointer ml-0 text-center basis-1/3 lg:text-left lg:ml-auto lg:basis-auto"
           onClick={() => router.push('/tos')}
         >
-          {t('common:termsOfUse')}
+          {t('common:termsOfService')}
         </label>
         <label
           className="cursor-pointer pl-0 text-center basis-1/3 lg:text-left lg:pl-10 lg:basis-auto"
