@@ -77,7 +77,9 @@ const SectionIntegrations = () => {
       }
     }
 
-    for (let i = 0; i < 4; i++) {
+    const numIntegrations = Math.ceil(numX / 2)
+
+    for (let i = 0; i < numIntegrations; i++) {
       let cell: AnimatedCell | undefined = undefined
       do {
         const cellX = Math.round(Math.random() * numX)
