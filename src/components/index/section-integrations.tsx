@@ -128,7 +128,7 @@ const SectionIntegrations = () => {
     const effect = new KeyframeEffect(
       containerRef.current,
       [{ transform: 'translateX(0)' }, { transform: 'translateX(-120px)' }],
-      { duration: 3000, fill: 'forwards', iterations: 1 },
+      { duration: 5000, fill: 'forwards', iterations: 1 },
     )
     const anim = new Animation(effect, document.timeline)
     anim.addEventListener('finish', onAnimationEnd)

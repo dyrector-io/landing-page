@@ -26,4 +26,3 @@ const SectionFeatures = () => {
 }
 
 export default SectionFeatures
-

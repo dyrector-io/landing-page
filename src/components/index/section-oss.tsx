@@ -25,4 +25,3 @@ const SectionOSS = () => {
 }
 
 export default SectionOSS
-

@@ -1,5 +1,5 @@
 export const EMAIL = 'hello@dyrector.io'
-export const DISCORD_INVITE = 'http://discord.gg/'
+export const DISCORD_INVITE = 'https://discord.gg/HZpBWsRgem'
 
 export const DOCS_URL = 'https://docs.dyrector.io'
 export const BLOG_URL = 'https://blog.dyrector.io'
