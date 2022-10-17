@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(134.71deg, #070954 -12.52%, #090422 69.59%);
+  color: #ffffff;
+}
+
+* {
+  scrollbar-color: #c4c4c4 #404656;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+
+  background: #404656;
+  border-radius: 1ex;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid #404656;
+  background: #c4c4c4;
+  border-radius: 1ex;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: #161d31;
+}
+
+.font-sans-pro {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(273.79deg, #FFFFFF -48.65%, #067090 111.85%);
+  -webkit-text-fill-color: transparent;
+  background-size: 100%;
+}

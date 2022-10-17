@@ -1,0 +1,78 @@
+{
+  "compassFor": "Compass for",
+  "compassForItems": {
+    "containers": "containers",
+    "kubernetes": "kubernetes",
+    "engineers": "engineers",
+    "developers": "developers",
+    "managers": "managers",
+    "releases": "releases",
+    "pipelines": "pipelines",
+    "versions": "versions",
+    "applications": "applications",
+    "services": "services",
+    "configs": "configs",
+    "products": "products",
+    "microservices": "microservices",
+    "code": "code",
+    "databases": "databases",
+    "tickets": "tickets",
+    "workflows": "workflows",
+    "collaboration": "collaboration"
+  },
+  "headerText": "dyrector.io is an open source next-gen platform where you can build and scale microservices without vendor lock-in. Level up your deployments with PaaS like experience and focus only what matters.",
+  "getStartedForFree": "Get Started for free",
+
+  "designedForCompanies": {
+    "title": "dyrector.io is designed for software companies working with the followings",
+    "companies": {
+      "orchestration": "orchestration",
+      "agility": "agility",
+      "cloud": "cloud",
+      "cont-integration": "continues integration",
+      "release-mg": "release management"
+    }
+  },
+
+  "features": {
+    "deploy": {
+      "section1Title": "Build up delivery channels",
+      "section1Details": "dyrector.io is an open source next-gen platform where you can build and scale microservices without vendor lock-in. Level up your deployments with a int do nostrud elit nostrud velit Lorem voluptate sint elit do nisi velit.",
+      "section2Title": "Autopilot your release processes",
+      "section2Details": "dyrector.io is an open source next-gen platform where you can build and scale microservices without vendor lock-in. Level up your deployments with a int do nostrud elit nostrud velit Lorem voluptate sint elit do nisi velit."
+    },
+    "control": {
+      "section1Title": "Multi intance deployments",
+      "section1Details": "dyrector.io is an open source next-gen platform where you can build and scale microservices without vendor lock-in. Level up your deployments with a int do nostrud elit nostrud velit Lorem voluptate sint elit do nisi velit.",
+      "section2Title": "No vendor lock",
+      "section2Details": "Be it a simple native server with Docker installed, a Docker Swarm, a Kubernetes cluster or any other container based platform, dyrector.io is going to manage your deployment tasks. We're continuously updating our Agent by adding support to new runtime platforms."
+    }
+  },
+
+  "community": {
+    "title": "Join Our Community",
+    "subTitle": "Join the conversation at our discord community.",
+    "button": "Join Discord"
+  },
+
+  "integrationsToWorkflow": [
+    [
+      "Add ",
+      {
+        "text": "seamless intergrations",
+        "gradient": true
+      },
+      " to your"
+    ],
+    ["existing development workflow"]
+  ],
+  "integrationsDetails": "dyrector.io connects to the tools you use every day, with more added each month. Browse our full list of integrations, including Gitlab, Github, Slack, and Discord.",
+
+  "oss": {
+    "title": "We are fully Open Source, will always be...",
+    "details1": "When we work on the open source product, it increases the community size, which means we end up with more features, and thus a better product. This means we get yet more community growth and it also helps with revenue growth since the paid products will also improve.",
+    "star": "Star",
+    "buttonSubText": "“As software eats the world, open source eats software”",
+    "details2": "dyrector.io is licensed under the permissive Apache License 2.0. It is designed to work with any Kubernetes cluster running in any environment, including all major cloud providers and on-premises environments."
+  }
+}
