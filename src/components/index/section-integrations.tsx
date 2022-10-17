@@ -51,7 +51,7 @@ const SectionIntegrations = () => {
         )}
         style={{ left: `${x * 120}px`, top: `${y * 120}px` }}
       >
-        {cell.image && <img ref={cell.imageRef} src={cell.image} width={100} height={100} />}
+        {cell.image && <img ref={cell.imageRef} className="p-1" src={cell.image} width={100} height={100} />}
       </div>
     )
   }
@@ -167,7 +167,7 @@ const SectionIntegrations = () => {
   }
 
   return (
-    <div className="w-full h-[460px] relative my-8 overflow-hidden">
+    <div className="w-full h-[460px] relative my-40 overflow-hidden">
       <div className="absolute inset-0">
         <div ref={containerRef}>{cells.cells.map(it => createCell(it))}</div>
       </div>
