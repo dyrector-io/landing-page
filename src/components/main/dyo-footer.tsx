@@ -47,13 +47,18 @@ const Column = (props: React.PropsWithChildren<ColumnProps>) => {
   )
 }
 
-const DyoFooter = () => {
+type DyoFooterProps = {
+  className?: string
+}
+
+const DyoFooter = (props: DyoFooterProps) => {
+  const { className } = props
   const { t } = useTranslation('footer')
   const router = useRouter()
 
   return (
-    <>
-      <div className="px-12 flex flex-wrap mb-20 pt-48">
+    <div className={className}>
+      <div className="flex flex-wrap mb-20 pt-48">
         <div className="flex-auto basis-full md:basis-1/2 lg:basis-2/6">
           <Image src="/logo.svg" width="140px" height="46px" alt={t('common:logoAlt')} />
         </div>
@@ -86,7 +91,7 @@ const DyoFooter = () => {
           <Column label={t('common:career')}>{t('careerText')}</Column>
         </div>
       </div>
-      <div className="px-12 flex flex-row flex-wrap pb-5">
+      <div className="flex flex-row flex-wrap pb-5">
         <label className="basis-full text-center lg:text-left lg:basis-auto">{t('common:copyright')}</label>
         <label
           className="cursor-pointer ml-0 text-center basis-1/3 lg:text-left lg:ml-auto lg:basis-auto"
@@ -107,7 +112,7 @@ const DyoFooter = () => {
           {t('common:cookiePolicy')}
         </label>
       </div>
-    </>
+    </div>
   )
 }
 

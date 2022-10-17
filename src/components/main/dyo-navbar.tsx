@@ -1,12 +1,18 @@
+import clsx from 'clsx'
 import useTranslation from 'next-translate/useTranslation'
 import Image from 'next/image'
 import { BLOG_URL, CHANGELOG_URL, DISCORD_INVITE, DOCS_URL, GITHUB_URL } from '../../const'
 
-const DyoNavbar = () => {
+type DyoNavbarProps = {
+  className?: string
+}
+
+const DyoNavbar = (props: DyoNavbarProps) => {
+  const { className } = props
   const { t } = useTranslation('common')
 
   return (
-    <div className="px-28 py-11 flex items-center">
+    <div className={clsx('py-11 flex items-center', className)}>
       <div className="w-36 cursor-pointer">
         <a href="/">
           <Image src="/logo.svg" width="140px" height="46px" alt={t('logoAlt')} />

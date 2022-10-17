@@ -1,14 +1,18 @@
 import clsx from 'clsx'
 import useTranslation from 'next-translate/useTranslation'
 import Image from 'next/image'
+type SectionDesignedfcProps = {
+  className?: string
+}
 
-const SectionDesignedfc = () => {
+const SectionDesignedfc = (props: SectionDesignedfcProps) => {
+  const { className } = props
   const { t } = useTranslation('index')
 
   const items = ['orchestration', 'agility', 'cloud', 'cont-integration', 'release-mg']
 
   return (
-    <div className="text-center mx-auto my-24 max-w-6xl">
+    <div className={clsx('text-center mx-auto mt-16 mb-40', className)}>
       <div className="pt-9 text-slate-300 bold text-xl font-bold max-w-lg mx-auto">
         {t('designedForCompanies.title')}
       </div>

@@ -4,6 +4,10 @@ import React, { useEffect, useRef, useState } from 'react'
 import { INTEGRATION_LOGOS } from '../../const'
 import useTranslation from 'next-translate/useTranslation'
 
+type SectionIntegrationsProps = {
+  className?: string
+}
+
 interface AnimatedCell {
   key: string
   x: number
@@ -21,7 +25,8 @@ interface CellState {
 
 type CellPositionRef = { [key: string]: number } // cellId to cell x coordinate
 
-const SectionIntegrations = () => {
+const SectionIntegrations = (props: SectionIntegrationsProps) => {
+  const { className } = props
   const { t } = useTranslation('index')
 
   const containerRef = useRef<HTMLDivElement>(null)
@@ -169,12 +174,12 @@ const SectionIntegrations = () => {
   }
 
   return (
-    <div className="w-full h-[460px] relative my-40 overflow-hidden">
+    <div className={clsx('w-full h-[460px] relative my-8 overflow-hidden', className)}>
       <div className="absolute inset-0">
         <div ref={containerRef}>{cells.cells.map(it => createCell(it))}</div>
       </div>
       <div className={clsx('absolute inset-0 flex justify-center items-center', styles['integration-text-container'])}>
-        <div className="max-w-2xl flex flex-col items-center">
+        <div className="max-w-3xl flex flex-col items-center">
           {getTitle()}
           <label className="mt-8 text-center text-lg">{t('integrationsDetails')}</label>
         </div>
