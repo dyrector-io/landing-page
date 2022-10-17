@@ -4,11 +4,16 @@ import Image from 'next/image'
 import { DISCORD_INVITE } from '../../const'
 import styles from '../../styles/index.module.css'
 
-const SectionCommunity = () => {
+type SectionCommunityProps = {
+  className?: string
+}
+
+const SectionCommunity = (props: SectionCommunityProps) => {
+  const { className } = props
   const { t } = useTranslation('index')
 
   return (
-    <div className="text-center max-w-5xl mx-auto my-24">
+    <div className={clsx('text-center mx-auto my-44', className)}>
       <div className="animate-bounce">
         <Image src="/logo-discord.svg" layout="intrinsic" width={114} height={83} />
       </div>

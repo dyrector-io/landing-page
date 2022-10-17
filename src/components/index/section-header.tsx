@@ -25,7 +25,12 @@ export const COMPASS_FOR_TEXTS = [
   'collaboration',
 ]
 
-const SectionHeader = () => {
+type SectionHeaderProps = {
+  className?: string
+}
+
+const SectionHeader = (props: SectionHeaderProps) => {
+  const { className } = props
   const { t } = useTranslation('index')
 
   const textRef = useRef<HTMLSpanElement>(null)
@@ -59,8 +64,8 @@ const SectionHeader = () => {
   }, [textRef])
 
   return (
-    <div className={clsx(styles.world, 'flex flex-wrap py-20 justify-center gap-20')}>
-      <div className="basis-full flex flex-col md:basis-[500px]">
+    <div className={clsx(styles.world, 'flex flex-wrap py-14 md:py-36 justify-between', className)}>
+      <div className="flex flex-col md:basis-1/2">
         <div className="text-gradient font-sans-pro font-bold text-4xl pb-8">
           {t('compassFor')}
           <span>
@@ -75,7 +80,7 @@ const SectionHeader = () => {
           </button>
         </div>
       </div>
-      <div className="basis-full flex justify-center md:block md:basis-[500px]">
+      <div className="basis-full md:basis-1/2 text-center md:text-right pt-16 md:pt-0">
         <Image src="/header-ship.svg" layout="intrinsic" width={500} height={300}></Image>
       </div>
     </div>

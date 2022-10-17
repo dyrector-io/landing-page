@@ -8,17 +8,19 @@ import SectionOSS from '../components/index/section-oss'
 import SectionCommunity from '../components/index/section-community'
 import SectionDesignedfc from '../components/index/section-designedfc'
 
+const classNames = 'w-11/12 lg:w-5/6 xl:w-4/6 2xl:w-7/12 mx-auto'
+
 const Index: NextPage = () => {
   return (
-    <div className="w-full min-h-screen">
-      <DyoNavbar />
-      <SectionHeader />
-      <SectionDesignedfc />
-      <SectionFeatures />
-      <SectionCommunity />
+    <div className="min-h-screen">
+      <DyoNavbar className={classNames} />
+      <SectionHeader className={classNames} />
+      <SectionDesignedfc className={classNames} />
+      <SectionFeatures className={classNames} />
+      <SectionCommunity className={classNames} />
       <SectionIntegrations />
-      <SectionOSS />
-      <DyoFooter />
+      <SectionOSS className={classNames} />
+      <DyoFooter className={classNames} />
     </div>
   )
 }

@@ -20,11 +20,11 @@
     "workflows": "workflows",
     "collaboration": "collaboration"
   },
-  "headerText": "dyrector.io is an open source next-gen platform where you can build and scale microservices without vendor lock-in. Level up your deployments with PaaS like experience and focus only what matters.",
+  "headerText": "dyrector.io is an open-source Internal Developer Platform that turns deployments of your services in Docker & Kubernetes as simple as you want them to be without vendor lock-in.",
   "getStartedForFree": "Get Started for free",
 
   "designedForCompanies": {
-    "title": "dyrector.io is designed for software companies working with the followings",
+    "title": "dyrector.io is designed for developers working with the following technologies & frameworks",
     "companies": {
       "orchestration": "orchestration",
       "agility": "agility",
@@ -36,22 +36,22 @@
 
   "features": {
     "deploy": {
-      "section1Title": "Build up delivery channels",
-      "section1Details": "dyrector.io is an open source next-gen platform where you can build and scale microservices without vendor lock-in. Level up your deployments with a int do nostrud elit nostrud velit Lorem voluptate sint elit do nisi velit.",
-      "section2Title": "Autopilot your release processes",
-      "section2Details": "dyrector.io is an open source next-gen platform where you can build and scale microservices without vendor lock-in. Level up your deployments with a int do nostrud elit nostrud velit Lorem voluptate sint elit do nisi velit."
+      "section1Title": "Build delivery channels",
+      "section1Details": "Create your own low-code CD workflow to deploy images out of your existing CI processes. No more messing with YAML files, you can focus on things that deliver value to your users.",
+      "section2Title": "Autopilot your releases",
+      "section2Details": "Automate & power-up your industry standard release processes with integrations. Increase your team's efficiency & transparency with notifications, and enable your product managers and other non-technical stakeholders to self-service deployments."
     },
     "control": {
       "section1Title": "Multi intance deployments",
-      "section1Details": "dyrector.io is an open source next-gen platform where you can build and scale microservices without vendor lock-in. Level up your deployments with a int do nostrud elit nostrud velit Lorem voluptate sint elit do nisi velit.",
+      "section1Details": "Simplify complex release management processes with the multi-instance deployment capabilities of dyrector.io. Manage and execute deployments of different versions of your applications to multiple nodes. Fire up Docker & Kubernetes test environments on the fly.",
       "section2Title": "No vendor lock",
-      "section2Details": "Be it a simple native server with Docker installed, a Docker Swarm, a Kubernetes cluster or any other container based platform, dyrector.io is going to manage your deployment tasks. We're continuously updating our Agent by adding support to new runtime platforms."
+      "section2Details": "Interact with your infrastructure in a PaaS-like manner with no strings attached. dyrector.io supports AWS, GCP, and Azure, as well. If you decide to stop using dyrector.io, you won't have to restart provisioning your infrastructure."
     }
   },
 
   "community": {
     "title": "Join Our Community",
-    "subTitle": "Join the conversation at our discord community.",
+    "subTitle": "Meet other dyrector's at our Discord community",
     "button": "Join Discord"
   },
 
@@ -59,20 +59,20 @@
     [
       "Add ",
       {
-        "text": "seamless intergrations",
+        "text": "integrations seamlessly",
         "gradient": true
       },
       " to your"
     ],
-    ["existing development workflow"]
+    ["existing development workflows"]
   ],
-  "integrationsDetails": "dyrector.io connects to the tools you use every day, with more added each month. Browse our full list of integrations, including Gitlab, Github, Slack, and Discord.",
+  "integrationsDetails": "dyrector.io connects to the tools you use every day with new integrations in the works. Check our full list of integrations including GitLab, GitHub, Slack and Discord in our documentation.",
 
   "oss": {
-    "title": "We are fully Open Source, will always be...",
-    "details1": "When we work on the open source product, it increases the community size, which means we end up with more features, and thus a better product. This means we get yet more community growth and it also helps with revenue growth since the paid products will also improve.",
+    "title": "dyrector.io is fully open-source, will always be...",
+    "details1": "Open-source products bring community-driven value to the world. We created dyrector.io for developers who'd rather not work on deployments and configurations instead of developing their solutions. We're looking for suggestions from developers to create the perfect deployment platform for them.",
     "star": "Star",
     "buttonSubText": "“As software eats the world, open source eats software”",
-    "details2": "dyrector.io is licensed under the permissive Apache License 2.0. It is designed to work with any Kubernetes cluster running in any environment, including all major cloud providers and on-premises environments."
+    "details2": ""
   }
 }

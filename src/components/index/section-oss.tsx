@@ -1,12 +1,18 @@
 import useTranslation from 'next-translate/useTranslation'
 import DyoTextBox from '../main/dyo-textbox'
 import GitHubButton from 'react-github-btn'
+import clsx from 'clsx'
 
-const SectionOSS = () => {
+type SectionOSSProps = {
+  className?: string
+}
+
+const SectionOSS = (props: SectionOSSProps) => {
+  const { className } = props
   const { t } = useTranslation('index')
 
   return (
-    <div className="text-center max-w-5xl mx-auto mt-24">
+    <div className={clsx('text-center mt-24', className)}>
       <DyoTextBox title={t('oss.title')} textClass="py-6">
         {t('oss.details1')}
       </DyoTextBox>
