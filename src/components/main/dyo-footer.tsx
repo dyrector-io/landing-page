@@ -59,10 +59,10 @@ const DyoFooter = (props: DyoFooterProps) => {
   return (
     <div className={className}>
       <div className="flex flex-wrap mb-20 pt-48">
-        <div className="flex-auto basis-full md:basis-1/2 lg:basis-2/6">
+        <div className="flex-auto basis-full sm:basis-6/12 lg:basis-1/6 2xl:basis-2/6">
           <Image src="/logo.svg" width="140px" height="46px" alt={t('common:logoAlt')} />
         </div>
-        <Column label={t('common:company')} className="basis-full pt-4 md:pt-0 md:basis-1/2 lg:basis-1/6">
+        <Column label={t('common:company')} className="basis-full pt-4 md:pt-0 sm:basis-3/12 lg:basis-1/6">
           <label className="pb-4">
             <a href="/">{t('common:home')}</a>
           </label>
@@ -76,19 +76,21 @@ const DyoFooter = (props: DyoFooterProps) => {
             <a href={BLOG_URL}>{t('common:blog')}</a>
           </label>
         </Column>
-        <Column label={t('common:community')} className="basis-full pt-4 md:pt-0 md:basis-1/2 lg:basis-1/6">
+        <Column label={t('common:community')} className="basis-full pt-4 md:pt-0 sm:basis-3/12 lg:basis-1/6">
           <CommunityLink image="/logo-discord.svg" label={t('common:discord')} url={DISCORD_INVITE} />
           <CommunityLink image="/logo-github.svg" label={t('common:github')} url={GITHUB_URL} />
           <CommunityLink image="/logo-twitter.svg" label={t('common:twitter')} url={TWITTER_URL} />
           <CommunityLink image="/logo-linkedin.svg" label={t('common:linkedin')} url={LINKEDIN_URL} />
         </Column>
-        <div className="flex flex-col basis-full pt-4 md:pt-0 md:basis-1/2 lg:basis-2/6">
-          <Column label={t('common:getInTouch')}>
+        <div className="flex flex-wrap pt-4 md:pt-0 basis-full lg:basis-2/6 justify-around">
+          <Column label={t('common:getInTouch')} className="sm:basis-1/2 lg:basis-full">
             <div className="flex">
               <CommunityLink image="/email.svg" label={EMAIL} url={`mailto:${EMAIL}`} />
             </div>
           </Column>
-          <Column label={t('common:career')}>{t('careerText')}</Column>
+          <Column label={t('common:career')} className="sm:basis-1/2 lg:basis-full">
+            {t('careerText')}
+          </Column>
         </div>
       </div>
       <div className="flex flex-row flex-wrap pb-5">

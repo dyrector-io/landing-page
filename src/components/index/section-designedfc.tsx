@@ -16,9 +16,9 @@ const SectionDesignedfc = (props: SectionDesignedfcProps) => {
       <div className="pt-9 text-slate-300 bold text-xl font-bold max-w-lg mx-auto">
         {t('designedForCompanies.title')}
       </div>
-      <div className="pt-16 flex justify-between">
+      <div className="pt-8 flex justify-around 2xl:justify-between flex-wrap">
         {items.map((it, index) => (
-          <div className="flex flex-col w-48" key={it}>
+          <div className="flex flex-col w-48 pt-8" key={it}>
             <Image src={`/icon-${it}.svg`} layout="intrinsic" width={50} height={50} />
             <label key={index} className="text-slate-300 text-sm uppercase pt-4">
               {t(`designedForCompanies.companies.${it}`)}

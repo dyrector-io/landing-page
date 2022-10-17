@@ -8,7 +8,7 @@ import SectionOSS from '../components/index/section-oss'
 import SectionCommunity from '../components/index/section-community'
 import SectionDesignedfc from '../components/index/section-designedfc'
 
-const classNames = 'w-11/12 lg:w-5/6 xl:w-4/6 mx-auto'
+const classNames = 'w-11/12 lg:w-5/6 xl:w-4/6 2xl:w-7/12 mx-auto'
 
 const Index: NextPage = () => {
   return (

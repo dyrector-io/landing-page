@@ -9,6 +9,7 @@ html,
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(134.71deg, #070954 -12.52%, #090422 69.59%);
+  background-color: #090422;
   color: #ffffff;
 }
 
@@ -44,7 +45,8 @@ body {
 .text-gradient {
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(273.79deg, #FFFFFF -48.65%, #067090 111.85%);
+  background-image: linear-gradient(273.79deg, #ffffff -48.65%, #067090 111.85%);
   -webkit-text-fill-color: transparent;
   background-size: 100%;
 }
+

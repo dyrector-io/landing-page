@@ -64,7 +64,7 @@ const SectionHeader = (props: SectionHeaderProps) => {
   }, [textRef])
 
   return (
-    <div className={clsx(styles.world, 'flex flex-wrap py-36 justify-between', className)}>
+    <div className={clsx(styles.world, 'flex flex-wrap py-14 md:py-36 justify-between', className)}>
       <div className="flex flex-col md:basis-1/2">
         <div className="text-gradient font-sans-pro font-bold text-4xl pb-8">
           {t('compassFor')}
