@@ -94,7 +94,9 @@ const DyoFooter = (props: DyoFooterProps) => {
         </div>
       </div>
       <div className="flex flex-row flex-wrap pb-5">
-        <label className="basis-full text-center lg:text-left lg:basis-auto">{t('common:copyright')}</label>
+        <label className="basis-full lg:basis-auto text-center lg:text-left order-last lg:order-first pt-5 lg:pt-0">
+          {t('common:copyright')}
+        </label>
         <label
           className="cursor-pointer ml-0 text-center basis-1/3 lg:text-left lg:ml-auto lg:basis-auto"
           onClick={() => router.push('/tos')}
