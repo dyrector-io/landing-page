@@ -12,7 +12,7 @@ const SectionOSS = (props: SectionOSSProps) => {
   const { t } = useTranslation('index')
 
   return (
-    <div className={clsx('text-center mt-24', className)}>
+    <div className={clsx('text-center mt-48', className)}>
       <DyoTextBox title={t('oss.title')} textClass="py-6">
         {t('oss.details1')}
       </DyoTextBox>

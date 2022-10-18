@@ -21,7 +21,7 @@
     "collaboration": "collaboration"
   },
   "headerText": "dyrector.io is an open-source Internal Developer Platform that turns deployments of your services in Docker & Kubernetes as simple as you want them to be without vendor lock-in.",
-  "getStartedForFree": "Get Started for free",
+  "getStartedForFree": "Get started for free",
 
   "designedForCompanies": {
     "title": "dyrector.io is designed for developers working with the following technologies & frameworks",
@@ -29,7 +29,7 @@
       "orchestration": "orchestration",
       "agility": "agility",
       "cloud": "cloud",
-      "cont-integration": "continues integration",
+      "cont-integration": "continuous integration",
       "release-mg": "release management"
     }
   },
@@ -44,7 +44,7 @@
     "control": {
       "section1Title": "Multi intance deployments",
       "section1Details": "Simplify complex release management processes with the multi-instance deployment capabilities of dyrector.io. Manage and execute deployments of different versions of your applications to multiple nodes. Fire up Docker & Kubernetes test environments on the fly.",
-      "section2Title": "No vendor lock",
+      "section2Title": "No vendor lock-in",
       "section2Details": "Interact with your infrastructure in a PaaS-like manner with no strings attached. dyrector.io supports AWS, GCP, and Azure, as well. If you decide to stop using dyrector.io, you won't have to restart provisioning your infrastructure."
     }
   },

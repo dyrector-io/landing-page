@@ -58,7 +58,7 @@ const DyoFooter = (props: DyoFooterProps) => {
 
   return (
     <div className={className}>
-      <div className="flex flex-wrap mb-20 pt-48">
+      <div className="flex flex-wrap mb-20 pt-36">
         <div className="flex-auto basis-full sm:basis-6/12 lg:basis-1/6 2xl:basis-2/6">
           <Image src="/logo.svg" width="140px" height="46px" alt={t('common:logoAlt')} />
         </div>
