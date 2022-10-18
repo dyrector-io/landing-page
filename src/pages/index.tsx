@@ -10,19 +10,17 @@ import SectionDesignedfc from '../components/index/section-designedfc'
 
 const classNames = 'w-11/12 lg:w-5/6 xl:w-4/6 2xl:w-7/12 mx-auto'
 
-const Index: NextPage = () => {
-  return (
-    <div className="min-h-screen">
-      <DyoNavbar className={classNames} />
-      <SectionHeader className={classNames} />
-      <SectionDesignedfc className={classNames} />
-      <SectionCommunity className={classNames} />
-      <SectionFeatures className={classNames} />
-      <SectionIntegrations />
-      <SectionOSS className={classNames} />
-      <DyoFooter className={classNames} />
-    </div>
-  )
-}
+const Index: NextPage = () => (
+  <div className="min-h-screen">
+    <DyoNavbar className={classNames} />
+    <SectionHeader className={classNames} />
+    <SectionDesignedfc className={classNames} />
+    <SectionCommunity className={classNames} />
+    <SectionFeatures className={classNames} />
+    <SectionIntegrations />
+    <SectionOSS className={classNames} />
+    <DyoFooter className={classNames} />
+  </div>
+)
 
 export default Index

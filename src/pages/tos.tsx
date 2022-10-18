@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
-import DyoNavbar from '../components/main/dyo-navbar'
 import useTranslation from 'next-translate/useTranslation'
+import DyoNavbar from '../components/main/dyo-navbar'
 
 const Index: NextPage = () => {
   const { t } = useTranslation('tos')

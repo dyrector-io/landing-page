@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import styles from '../../styles/index.module.css'
 import clsx from 'clsx'
 import useTranslation from 'next-translate/useTranslation'
 import { useEffect, useRef } from 'react'
+import styles from '../../styles/index.module.css'
 
 export const COMPASS_FOR_TEXTS = [
   'containers',
@@ -54,14 +54,14 @@ const SectionHeader = (props: SectionHeaderProps) => {
     }
 
     textRef.current!.addEventListener('animationend', e => {
-      if (e.animationName === styles['fadeOut']) {
+      if (e.animationName === styles.fadeOut) {
         textAnimationIndex.current = (textAnimationIndex.current + 1) % COMPASS_FOR_TEXTS.length
 
         textRef.current!.innerText = getAnimatedText()
         textRef.current!.className = styles['animate-fade-in']
       }
     })
-  }, [textRef])
+  }, [textRef, getAnimatedText])
 
   return (
     <div className={clsx(styles.world, 'flex flex-wrap py-14 md:py-36 justify-between', className)}>
@@ -76,6 +76,7 @@ const SectionHeader = (props: SectionHeaderProps) => {
         <label>{t('headerText')}</label>
         <div>
           <button
+            type="button"
             className={clsx(styles['button-gradient'], 'py-4 px-6 mt-6 font-bold rounded-sm')}
             onClick={() => window.location.assign('https://docs.dyrector.io/get-started/overview')}
           >
@@ -84,7 +85,7 @@ const SectionHeader = (props: SectionHeaderProps) => {
         </div>
       </div>
       <div className="basis-full md:basis-1/2 text-center md:text-right pt-16 md:pt-0">
-        <Image src="/header-ship.svg" layout="intrinsic" width={500} height={300}></Image>
+        <Image src="/header-ship.svg" layout="intrinsic" width={500} height={300} />
       </div>
     </div>
   )

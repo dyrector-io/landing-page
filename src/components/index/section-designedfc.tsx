@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import useTranslation from 'next-translate/useTranslation'
 import Image from 'next/image'
+
 type SectionDesignedfcProps = {
   className?: string
 }

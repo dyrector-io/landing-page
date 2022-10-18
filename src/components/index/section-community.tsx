@@ -21,6 +21,7 @@ const SectionCommunity = (props: SectionCommunityProps) => {
       <div className="pt-9 text-slate-300 bold text-3xl font-bold">{t('community.title')}</div>
       <div className="pt-5 text-lg">{t('community.subTitle')}</div>
       <button
+        type="button"
         onClick={() => window.open(DISCORD_INVITE, '_blank', 'noopener,noreferrer')}
         className={clsx(styles['button-gradient'], 'py-3 px-10 mt-10 font-bold rounded-sm')}
       >

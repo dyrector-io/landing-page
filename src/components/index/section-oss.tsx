@@ -1,7 +1,7 @@
 import useTranslation from 'next-translate/useTranslation'
-import DyoTextBox from '../main/dyo-textbox'
 import GitHubButton from 'react-github-btn'
 import clsx from 'clsx'
+import DyoTextBox from '../main/dyo-textbox'
 
 type SectionOSSProps = {
   className?: string

@@ -1,8 +1,8 @@
-import styles from '../../styles/index.module.css'
 import clsx from 'clsx'
 import React, { useEffect, useRef, useState } from 'react'
-import { INTEGRATION_LOGOS } from '../../const'
 import useTranslation from 'next-translate/useTranslation'
+import { INTEGRATION_LOGOS } from '../../const'
+import styles from '../../styles/index.module.css'
 
 type SectionIntegrationsProps = {
   className?: string
@@ -54,43 +54,41 @@ const SectionIntegrations = (props: SectionIntegrationsProps) => {
         )}
         style={{ left: `${x * 120}px`, top: `${y * 120}px` }}
       >
-        {cell.image && <img ref={cell.imageRef} className="p-1" src={cell.image} width={100} height={100} />}
+        {cell.image && <img ref={cell.imageRef} alt="" className="p-1" src={cell.image} width={100} height={100} />}
       </div>
     )
   }
 
   const generateCells = () => {
-    let cells: AnimatedCell[] = []
+    const list: AnimatedCell[] = []
 
     const numX = Math.ceil(containerRef.current!.clientWidth / 120) + 1
     for (let y = 0; y < 4; y++) {
       for (let x = 0; x < numX; x++) {
         const type = Math.round(Math.random() * 3)
-        if (type == 0) {
-          continue
+        if (type !== 0) {
+          list.push({
+            key: `${list.length}`,
+            x,
+            y,
+            type,
+            ref: React.createRef<HTMLDivElement>(),
+          })
         }
-
-        cells.push({
-          key: `${cells.length}`,
-          x: x,
-          y: y,
-          type: type,
-          ref: React.createRef<HTMLDivElement>(),
-        })
       }
     }
 
-    let logos = [...INTEGRATION_LOGOS]
+    const logos = [...INTEGRATION_LOGOS]
     for (let i = 0; i < logos.length; i++) {
-      let cell: AnimatedCell | undefined = undefined
+      let cell: AnimatedCell | undefined
       do {
         const cellX = Math.round(Math.random() * numX)
         const cellY = Math.round(Math.random() * 4)
 
-        cell = cells.find(it => it.x == cellX && it.y == cellY)
+        cell = list.find(it => it.x === cellX && it.y === cellY)
       } while (!cell)
 
-      const logoIndex = ~~(logos.length * Math.random())
+      const logoIndex = Math.round(logos.length * Math.random())
       cell.image = logos[logoIndex]
       cell.imageRef = React.createRef<HTMLImageElement>()
       logos.splice(logoIndex, 1)
@@ -98,12 +96,12 @@ const SectionIntegrations = (props: SectionIntegrationsProps) => {
 
     setCells({
       width: numX,
-      cells,
+      cells: list,
     })
   }
 
   const onAnimationEnd = () => {
-    let { cells: cellList, width } = cells
+    const { cells: cellList, width } = cells
     cellList.forEach(it => {
       if (it.ref.current) {
         let cellX = cellPositionRef.current[it.key] ?? it.x
@@ -120,7 +118,7 @@ const SectionIntegrations = (props: SectionIntegrationsProps) => {
       return
     }
 
-    if (cells.cells.length == 0) {
+    if (cells.cells.length === 0) {
       generateCells()
     }
 
@@ -136,25 +134,25 @@ const SectionIntegrations = (props: SectionIntegrationsProps) => {
   }, [containerRef, cells])
 
   const getTitle = () => {
-    const text = t('integrationsToWorkflow', undefined, {
+    const texts = t('integrationsToWorkflow', undefined, {
       returnObjects: true,
-    }) as string[][]
+    }) as (string | { text: string; gradient: boolean })[][]
     return (
       <>
-        {text.map((it, index) => (
+        {texts.map((it, index) => (
           <div key={index} className="font-sans-pro font-bold text-4xl text-center">
-            {it.map((text, index) => {
-              if (typeof text === 'string') {
-                return <label key={index}>{text}</label>
+            {it.map((element, elementIndex) => {
+              if (typeof element === 'string') {
+                return <label key={elementIndex}>{element}</label>
               }
 
-              const object = text as { text: string; gradient: boolean }
+              const object = element as { text: string; gradient: boolean }
               if (!object.gradient) {
-                return <label key={index}>{object.text}</label>
+                return <label key={elementIndex}>{object.text}</label>
               }
 
               return (
-                <div key={index} className="text-gradient inline">
+                <div key={elementIndex} className="text-gradient inline">
                   {object.text}
                 </div>
               )

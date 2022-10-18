@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import useTranslation from 'next-translate/useTranslation'
 import DyoTextBox from '../main/dyo-textbox'
-import clsx from 'clsx'
 
 type SectionFeaturesProps = {
   className?: string
