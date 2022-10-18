@@ -166,7 +166,7 @@ const SectionIntegrations = (props: SectionIntegrationsProps) => {
   }
 
   return (
-    <div className={clsx('w-full h-[460px] relative my-8 overflow-hidden', className)}>
+    <div className={clsx('w-full h-[460px] relative mb-22 mt-28 overflow-hidden', className)}>
       <div className="absolute inset-0">
         <div ref={containerRef}>{cells.cells.map(it => createCell(it))}</div>
       </div>

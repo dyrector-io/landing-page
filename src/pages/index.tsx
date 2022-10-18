@@ -16,8 +16,8 @@ const Index: NextPage = () => {
       <DyoNavbar className={classNames} />
       <SectionHeader className={classNames} />
       <SectionDesignedfc className={classNames} />
-      <SectionFeatures className={classNames} />
       <SectionCommunity className={classNames} />
+      <SectionFeatures className={classNames} />
       <SectionIntegrations />
       <SectionOSS className={classNames} />
       <DyoFooter className={classNames} />
