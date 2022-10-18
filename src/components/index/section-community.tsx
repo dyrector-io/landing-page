@@ -13,7 +13,7 @@ const SectionCommunity = (props: SectionCommunityProps) => {
   const { t } = useTranslation('index')
 
   return (
-    <div className={clsx('text-center mx-auto my-44', className)}>
+    <div className={clsx('text-center mx-auto my-24', className)}>
       <div className="animate-bounce">
         <Image src="/logo-discord.svg" layout="intrinsic" width={114} height={83} />
       </div>

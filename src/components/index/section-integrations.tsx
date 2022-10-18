@@ -37,8 +37,6 @@ const SectionIntegrations = (props: SectionIntegrationsProps) => {
     cells: [],
   })
 
-  const getRandomLogo = () => INTEGRATION_LOGOS[~~(INTEGRATION_LOGOS.length * Math.random())]
-
   const createCell = (cell: AnimatedCell) => {
     const { key, x, y, type } = cell
     return (
@@ -82,9 +80,8 @@ const SectionIntegrations = (props: SectionIntegrationsProps) => {
       }
     }
 
-    const numIntegrations = Math.ceil(numX / 2)
-
-    for (let i = 0; i < numIntegrations; i++) {
+    let logos = [...INTEGRATION_LOGOS]
+    for (let i = 0; i < logos.length; i++) {
       let cell: AnimatedCell | undefined = undefined
       do {
         const cellX = Math.round(Math.random() * numX)
@@ -93,8 +90,10 @@ const SectionIntegrations = (props: SectionIntegrationsProps) => {
         cell = cells.find(it => it.x == cellX && it.y == cellY)
       } while (!cell)
 
-      cell.image = getRandomLogo()
+      const logoIndex = ~~(logos.length * Math.random())
+      cell.image = logos[logoIndex]
       cell.imageRef = React.createRef<HTMLImageElement>()
+      logos.splice(logoIndex, 1)
     }
 
     setCells({
@@ -108,14 +107,7 @@ const SectionIntegrations = (props: SectionIntegrationsProps) => {
     cellList.forEach(it => {
       if (it.ref.current) {
         let cellX = cellPositionRef.current[it.key] ?? it.x
-        if (cellX <= 0) {
-          cellX = width - 1
-          if (it.imageRef && it.imageRef.current) {
-            it.imageRef.current!.src = getRandomLogo()
-          }
-        } else {
-          cellX -= 1
-        }
+        cellX = cellX <= 0 ? width - 1 : cellX - 1
         cellPositionRef.current[it.key] = cellX
         it.ref.current!.style.left = `${cellX * 120}px`
       }
@@ -174,7 +166,7 @@ const SectionIntegrations = (props: SectionIntegrationsProps) => {
   }
 
   return (
-    <div className={clsx('w-full h-[460px] relative my-8 overflow-hidden', className)}>
+    <div className={clsx('w-full h-[460px] relative mb-22 mt-28 overflow-hidden', className)}>
       <div className="absolute inset-0">
         <div ref={containerRef}>{cells.cells.map(it => createCell(it))}</div>
       </div>

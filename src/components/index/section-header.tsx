@@ -75,7 +75,10 @@ const SectionHeader = (props: SectionHeaderProps) => {
         </div>
         <label>{t('headerText')}</label>
         <div>
-          <button className={clsx(styles['button-gradient'], 'py-4 px-6 mt-6 font-bold rounded-sm')}>
+          <button
+            className={clsx(styles['button-gradient'], 'py-4 px-6 mt-6 font-bold rounded-sm')}
+            onClick={() => window.location.assign('https://docs.dyrector.io/get-started/overview')}
+          >
             {t('getStartedForFree')}
           </button>
         </div>
