@@ -17,7 +17,7 @@ const Index: NextPage = () => (
     <SectionDesignedfc className={classNames} />
     <SectionCommunity className={classNames} />
     <SectionFeatures className={classNames} />
-    <SectionIntegrations />
+    <SectionIntegrations className={classNames} />
     <SectionOSS className={classNames} />
     <DyoFooter className={classNames} />
   </div>

@@ -54,7 +54,9 @@ const SectionIntegrations = (props: SectionIntegrationsProps) => {
         )}
         style={{ left: `${x * 120}px`, top: `${y * 120}px` }}
       >
-        {cell.image && <img ref={cell.imageRef} alt="" className="p-1" src={cell.image} width={100} height={100} />}
+        {cell.image && (
+          <img ref={cell.imageRef} className="p-1 saturate-50" src={cell.image} width={100} height={100} />
+        )}
       </div>
     )
   }
@@ -125,7 +127,7 @@ const SectionIntegrations = (props: SectionIntegrationsProps) => {
     const effect = new KeyframeEffect(
       containerRef.current,
       [{ transform: 'translateX(0)' }, { transform: 'translateX(-120px)' }],
-      { duration: 5000, fill: 'forwards', iterations: 1 },
+      { duration: 7000, fill: 'forwards', iterations: 1 },
     )
     const anim = new Animation(effect, document.timeline)
     anim.addEventListener('finish', onAnimationEnd)
@@ -164,11 +166,17 @@ const SectionIntegrations = (props: SectionIntegrationsProps) => {
   }
 
   return (
-    <div className={clsx('w-full h-[460px] relative mb-22 mt-28 overflow-hidden', className)}>
+    <div className="w-full h-[460px] relative mb-22 mt-28 overflow-hidden">
       <div className="absolute inset-0">
         <div ref={containerRef}>{cells.cells.map(it => createCell(it))}</div>
       </div>
-      <div className={clsx('absolute inset-0 flex justify-center items-center', styles['integration-text-container'])}>
+      <div
+        className={clsx(
+          'absolute inset-0 flex justify-center items-center',
+          styles['integration-text-container'],
+          className,
+        )}
+      >
         <div className="max-w-3xl flex flex-col items-center">
           {getTitle()}
           <label className="mt-8 text-center text-lg">{t('integrationsDetails')}</label>
