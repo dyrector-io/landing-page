@@ -55,7 +55,7 @@ const SectionIntegrations = (props: SectionIntegrationsProps) => {
         style={{ left: `${x * 120}px`, top: `${y * 120}px` }}
       >
         {cell.image && (
-          <img ref={cell.imageRef} className="p-1 saturate-50" src={cell.image} width={100} height={100} />
+          <img ref={cell.imageRef} alt="cell" className="p-1 saturate-50" src={cell.image} width={100} height={100} />
         )}
       </div>
     )
