@@ -19,6 +19,10 @@ const DyoHead = () => {
       />
       <meta property="og:description" content={t('ogDescription')} />
       <meta name="robots" content="index, follow" />
+      <meta
+        name="ahrefs-site-verification"
+        content="0991df3db5955b4f76814fe1631851c55d2d5c267324abc803cd8da05a0e7c8a"
+      />
       <link rel="canonical" href="https://dyrector.io" />
     </Head>
   )
