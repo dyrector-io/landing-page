@@ -1,11 +1,11 @@
 {
-    "logBuild": false,
-    "locales": ["en"],
-    "defaultLocale": "en",
-    "pages": {
-      "*": ["common", "head", "footer"],
-      "/": ["index"],
-      "/tos": ["tos"]
-    }
+  "logBuild": false,
+  "locales": ["en"],
+  "defaultLocale": "en",
+  "pages": {
+    "*": ["common", "head", "footer"],
+    "/": ["index"],
+    "/tos": ["tos"],
+    "/cookies": ["cookies"],
   }
-  
+}
