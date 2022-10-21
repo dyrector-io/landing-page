@@ -69,6 +69,6 @@
 }
 
 .integration-text-container {
-  background: radial-gradient(30% 50% at center, rgba(0, 9, 33, 1), rgba(9, 4, 34, 0));
+  background: radial-gradient(rgba(0, 9, 33, 1) 30%, rgba(0, 0, 0, 0) 70%);
 }
 

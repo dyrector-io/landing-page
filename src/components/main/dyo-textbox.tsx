@@ -13,14 +13,14 @@ const DyoTextBox = (props: DyoTextBoxProps) => {
 
   return (
     <div className={className}>
-      <div
+      <h2
         className={clsx(
           titleClass,
           'font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-dyo-light-blue to-white pb-8',
         )}
       >
         {title}
-      </div>
+      </h2>
       <div className={textClass ?? 'text-slate-400'}>{children}</div>
     </div>
   )

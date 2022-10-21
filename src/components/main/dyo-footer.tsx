@@ -96,14 +96,20 @@ const DyoFooter = (props: DyoFooterProps) => {
         <label className="basis-full lg:basis-auto text-center lg:text-left order-last lg:order-first pt-5 lg:pt-0">
           {t('common:copyright')}
         </label>
-        <Link className="cursor-pointer ml-0 text-center basis-1/3 lg:text-left lg:ml-auto lg:basis-auto" href="/tos">
-          {t('common:termsOfService')}
+        <Link href="/tos">
+          <a className="cursor-pointer ml-0 text-center basis-1/3 lg:text-left lg:ml-auto lg:basis-auto">
+            {t('common:termsOfService')}
+          </a>
         </Link>
-        <Link className="cursor-pointer pl-0 text-center basis-1/3 lg:text-left lg:pl-10 lg:basis-auto" href="/privacy">
-          {t('common:privacyPolicy')}
+        <Link href="/privacy">
+          <a className="cursor-pointer pl-0 text-center basis-1/3 lg:text-left lg:pl-10 lg:basis-auto">
+            {t('common:privacyPolicy')}
+          </a>
         </Link>
-        <Link className="cursor-pointer pl-0 text-center basis-1/3 lg:text-left lg:pl-10 lg:basis-auto" href="/cookies">
-          {t('common:cookiePolicy')}
+        <Link href="/cookies">
+          <a className="cursor-pointer pl-0 text-center basis-1/3 lg:text-left lg:pl-10 lg:basis-auto">
+            {t('common:cookiePolicy')}
+          </a>
         </Link>
       </div>
     </div>

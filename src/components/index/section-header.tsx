@@ -66,12 +66,12 @@ const SectionHeader = (props: SectionHeaderProps) => {
   return (
     <div className={clsx(styles.world, 'flex flex-wrap py-14 md:py-36 justify-between', className)}>
       <div className="flex flex-col md:basis-1/2">
-        <div className="text-gradient font-sans-pro font-bold text-4xl mb-8 flex flex-wrap content-start h-20 sm:h-auto">
+        <h1 className="text-gradient font-sans-pro font-bold text-4xl mb-8 flex flex-wrap content-start h-20 sm:h-auto">
           {t('compassFor')}&nbsp;
           <div className="basis-full sm:basis-auto">
             <span ref={textRef}>{getAnimatedText()}</span>
           </div>
-        </div>
+        </h1>
         <label>{t('headerText')}</label>
         <div>
           <button
