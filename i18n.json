@@ -7,5 +7,6 @@
     "/": ["index"],
     "/tos": ["tos"],
     "/cookies": ["cookies"],
+    "/privacy": ["privacy"]
   }
 }
