@@ -2,6 +2,7 @@ import useTranslation from 'next-translate/useTranslation'
 import Image from 'next/image'
 import React from 'react'
 import clsx from 'clsx'
+import posthog from 'posthog-js'
 import Link from 'next/link'
 import {
   BLOG_URL,
@@ -13,8 +14,6 @@ import {
   LINKEDIN_URL,
   TWITTER_URL,
 } from '../../const'
-
-import posthog from 'posthog-js'
 
 interface CommunityLinkProps {
   image: string
@@ -29,7 +28,7 @@ const CommunityLink = (props: CommunityLinkProps) => {
     <a
       className="pb-4 flex cursor-pointer ph-no-capture"
       href={url}
-      onClick={() => posthog.capture(`CommunityLinkClicked: ${label}`, { url: url })}
+      onClick={() => posthog.capture(`CommunityLinkClicked: ${label}`, { url })}
     >
       <Image src={image} width={18} height={18} />
       <label className="pl-2 cursor-pointer">{label}</label>
