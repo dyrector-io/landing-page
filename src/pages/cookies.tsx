@@ -11,17 +11,17 @@ const Index: NextPage = () => {
 
   const renderType = (line: string | string[], index: number) => {
     if (Array.isArray(line)) {
-      return line.map((it, index) => (
-        <p key={index} className="text-sm text-bright pb-4">
+      return line.map((it, itindex) => (
+        <p key={`${index}-${itindex}`} className="text-sm text-bright pb-4">
           {it}
         </p>
       ))
-    } else
-      return (
-        <h6 key={index} className="mt-8 pb-4 font-semibold">
-          {line}
-        </h6>
-      )
+    }
+    return (
+      <h6 key={index} className="mt-8 pb-4 font-semibold">
+        {line}
+      </h6>
+    )
   }
 
   return (

@@ -15,27 +15,25 @@ const Index: NextPage = () => {
           {line}
         </h6>
       )
-    } else {
-      return line.map((it, itindex) => {
-        if (!Array.isArray(it)) {
-          return (
-            <p key={`${index}-${itindex}`} className="text-sm text-bright pb-4">
-              {it}
-            </p>
-          )
-        } else {
-          return (
-            <ul className="leading-10 list-disc list-inside pl-8 text-gray">
-              {it.map((sub, subindex) => (
-                <li key={`${index}-${itindex}-${subindex}`} className="text-sm text-bright pb-4">
-                  {sub}
-                </li>
-              ))}
-            </ul>
-          )
-        }
-      })
     }
+    return line.map((it, itindex) => {
+      if (!Array.isArray(it)) {
+        return (
+          <p key={`${index}-${itindex}`} className="text-sm text-bright pb-4">
+            {it}
+          </p>
+        )
+      }
+      return (
+        <ul className="leading-10 list-disc list-inside pl-8 text-gray">
+          {it.map((sub, subindex) => (
+            <li key={`${index}-${itindex}-${subindex}`} className="text-sm text-bright pb-4">
+              {sub}
+            </li>
+          ))}
+        </ul>
+      )
+    })
   }
 
   return (
