@@ -2,6 +2,7 @@ import useTranslation from 'next-translate/useTranslation'
 import Image from 'next/image'
 import React from 'react'
 import clsx from 'clsx'
+import Link from 'next/link'
 import {
   BLOG_URL,
   CHANGELOG_URL,
@@ -12,7 +13,6 @@ import {
   LINKEDIN_URL,
   TWITTER_URL,
 } from '../../const'
-import { useRouter } from 'next/router'
 
 interface CommunityLinkProps {
   image: string
@@ -54,7 +54,6 @@ type DyoFooterProps = {
 const DyoFooter = (props: DyoFooterProps) => {
   const { className } = props
   const { t } = useTranslation('footer')
-  const router = useRouter()
 
   return (
     <div className={className}>
@@ -64,16 +63,16 @@ const DyoFooter = (props: DyoFooterProps) => {
         </div>
         <Column label={t('common:company')} className="basis-full pt-4 md:pt-0 sm:basis-3/12 lg:basis-1/6">
           <label className="pb-4">
-            <a href="/">{t('common:home')}</a>
+            <Link href="/">{t('common:home')}</Link>
           </label>
           <label className="pb-4">
-            <a href={DOCS_URL}>{t('common:docs')}</a>
+            <Link href={DOCS_URL}>{t('common:docs')}</Link>
           </label>
           <label className="pb-4">
-            <a href={CHANGELOG_URL}>{t('common:changelog')}</a>
+            <Link href={CHANGELOG_URL}>{t('common:changelog')}</Link>
           </label>
           <label className="pb-4">
-            <a href={BLOG_URL}>{t('common:blog')}</a>
+            <Link href={BLOG_URL}>{t('common:blog')}</Link>
           </label>
         </Column>
         <Column label={t('common:community')} className="basis-full pt-4 md:pt-0 sm:basis-3/12 lg:basis-1/6">
@@ -97,24 +96,21 @@ const DyoFooter = (props: DyoFooterProps) => {
         <label className="basis-full lg:basis-auto text-center lg:text-left order-last lg:order-first pt-5 lg:pt-0">
           {t('common:copyright')}
         </label>
-        <label
-          className="cursor-pointer ml-0 text-center basis-1/3 lg:text-left lg:ml-auto lg:basis-auto"
-          onClick={() => router.push('/tos')}
-        >
-          {t('common:termsOfService')}
-        </label>
-        <label
-          className="cursor-pointer pl-0 text-center basis-1/3 lg:text-left lg:pl-10 lg:basis-auto"
-          onClick={() => router.push('/privacy')}
-        >
-          {t('common:privacyPolicy')}
-        </label>
-        <label
-          className="cursor-pointer pl-0 text-center basis-1/3 lg:text-left lg:pl-10 lg:basis-auto"
-          onClick={() => router.push('/cookies')}
-        >
-          {t('common:cookiePolicy')}
-        </label>
+        <Link href="/tos">
+          <a className="cursor-pointer ml-0 text-center basis-1/3 lg:text-left lg:ml-auto lg:basis-auto">
+            {t('common:termsOfService')}
+          </a>
+        </Link>
+        <Link href="/privacy">
+          <a className="cursor-pointer pl-0 text-center basis-1/3 lg:text-left lg:pl-10 lg:basis-auto">
+            {t('common:privacyPolicy')}
+          </a>
+        </Link>
+        <Link href="/cookies">
+          <a className="cursor-pointer pl-0 text-center basis-1/3 lg:text-left lg:pl-10 lg:basis-auto">
+            {t('common:cookiePolicy')}
+          </a>
+        </Link>
       </div>
     </div>
   )

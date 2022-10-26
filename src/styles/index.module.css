@@ -6,12 +6,12 @@
 }
 
 .button-gradient {
-  background: linear-gradient(97.23deg, #067090 -5.85%, #2A85A0 41.65%, #FFFFFF 319.54%);
+  background: linear-gradient(97.23deg, #067090 -5.85%, #2a85a0 41.65%, #ffffff 319.54%);
 }
 
 .animate-fade-out {
   animation: fadeOut 0.5s forwards;
-  background-image: linear-gradient(273.79deg, #FFFFFF -48.65%, #067090 151.85%);
+  background-image: linear-gradient(273.79deg, #ffffff -48.65%, #067090 151.85%);
   background-clip: text;
   -webkit-background-clip: text;
   position: absolute;
@@ -19,7 +19,7 @@
 
 .animate-fade-in {
   animation: fadeIn 0.5s forwards;
-  background-image: linear-gradient(273.79deg, #FFFFFF -48.65%, #067090 171.85%);
+  background-image: linear-gradient(273.79deg, #ffffff -48.65%, #067090 171.85%);
   background-clip: text;
   -webkit-background-clip: text;
   position: absolute;
@@ -54,20 +54,21 @@
 }
 
 .integration-cell-1 {
-  background-color: #071A43;
-  border: 1px solid #00D0BF;
+  background-color: #071a43;
+  border: 1px solid #00d0bf;
 }
 
 .integration-cell-2 {
-  background-color: #080E3B;
+  background-color: #080e3b;
   border: 1px solid #073354;
 }
 
 .integration-cell-3 {
-  background-color: #090C27;
-  border: 1px solid #00D0BF;
+  background-color: #090c27;
+  border: 1px solid #00d0bf;
 }
 
 .integration-text-container {
-  background: radial-gradient(30% 50% at center, rgba(0, 9, 33, 1), rgba(9, 4, 34, 0));
+  background: radial-gradient(rgba(0, 9, 33, 1) 30%, rgba(0, 0, 0, 0) 70%);
 }
+
