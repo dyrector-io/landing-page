@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import useTranslation from 'next-translate/useTranslation'
 import Image from 'next/image'
+import posthog from 'posthog-js'
 import { BLOG_URL, CHANGELOG_URL, DISCORD_INVITE, DOCS_URL, GITHUB_URL } from '../../const'
 
 type DyoNavbarProps = {
@@ -35,8 +36,11 @@ const DyoNavbar = (props: DyoNavbarProps) => {
         {t('changelog')}
       </a>
       <div
-        className="sm:px-5 h-5 cursor-pointer"
-        onClick={() => window.open(GITHUB_URL, '_self', 'noopener,noreferrer')}
+        className="sm:px-5 h-5 cursor-pointer ph-no-capture"
+        onClick={() => {
+          posthog.capture(`NavbarIconClicked: GitHub`, { url: GITHUB_URL })
+          window.open(GITHUB_URL, '_self', 'noopener,noreferrer')
+        }}
       >
         <Image
           className="py-auto"
@@ -47,7 +51,13 @@ const DyoNavbar = (props: DyoNavbarProps) => {
           layout="fixed"
         />
       </div>
-      <div className="h-5 cursor-pointer" onClick={() => window.open(DISCORD_INVITE, '_self', 'noopener,noreferrer')}>
+      <div
+        className="h-5 cursor-pointer ph-no-capture"
+        onClick={() => {
+          posthog.capture(`NavbarIconClicked: Discord`, { url: DISCORD_INVITE })
+          window.open(DISCORD_INVITE, '_self', 'noopener,noreferrer')
+        }}
+      >
         <Image src="/logo-discord.svg" width="20px" height="20px" alt={t('discordAlt')} layout="fixed" />
       </div>
     </div>

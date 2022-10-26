@@ -14,6 +14,8 @@ import {
   TWITTER_URL,
 } from '../../const'
 
+import posthog from 'posthog-js'
+
 interface CommunityLinkProps {
   image: string
   label: string
@@ -24,7 +26,11 @@ const CommunityLink = (props: CommunityLinkProps) => {
   const { image, label, url } = props
 
   return (
-    <a className="pb-4 flex cursor-pointer" href={url}>
+    <a
+      className="pb-4 flex cursor-pointer ph-no-capture"
+      href={url}
+      onClick={() => posthog.capture(`CommunityLinkClicked: ${label}`, { url: url })}
+    >
       <Image src={image} width={18} height={18} />
       <label className="pl-2 cursor-pointer">{label}</label>
     </a>
