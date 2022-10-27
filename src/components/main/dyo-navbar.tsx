@@ -3,7 +3,7 @@ import useTranslation from 'next-translate/useTranslation'
 import Image from 'next/image'
 import Link from 'next/link'
 import posthog from 'posthog-js'
-import { BLOG_URL, CHANGELOG_URL, CAREER_URL, DISCORD_INVITE, DOCS_URL, GITHUB_URL } from '../../const'
+import { BLOG_URL, CHANGELOG_URL, DISCORD_INVITE, DOCS_URL, GITHUB_URL } from '../../const'
 
 type DyoNavbarProps = {
   className?: string
@@ -27,16 +27,26 @@ const DyoNavbar = (props: DyoNavbarProps) => {
           />
         </div>
       </div>
-      <a className="sm:ml-auto sm:px-4 md:px-8 text-lg font-bold cursor-pointer" href={DOCS_URL} target="_blank">
+      <a
+        className="sm:ml-auto sm:px-4 md:px-8 text-lg font-bold cursor-pointer"
+        href={DOCS_URL}
+        target="_blank"
+        rel="noreferrer"
+      >
         {t('docs')}
       </a>
-      <a className="sm:px-4 md:px-8 text-lg font-bold cursor-pointer" href={BLOG_URL} target="_blank">
+      <a className="sm:px-4 md:px-8 text-lg font-bold cursor-pointer" href={BLOG_URL} target="_blank" rel="noreferrer">
         {t('blog')}
       </a>
       <Link href="/career">
         <a className="sm:px-4 md:px-8 text-lg font-bold cursor-pointer">{t('career')}</a>
       </Link>
-      <a className="sm:px-4 md:px-8 text-lg font-bold cursor-pointer" href={CHANGELOG_URL} target="_blank">
+      <a
+        className="sm:px-4 md:px-8 text-lg font-bold cursor-pointer"
+        href={CHANGELOG_URL}
+        target="_blank"
+        rel="noreferrer"
+      >
         {t('changelog')}
       </a>
       <div
