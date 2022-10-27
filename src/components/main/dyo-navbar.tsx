@@ -1,8 +1,9 @@
 import clsx from 'clsx'
 import useTranslation from 'next-translate/useTranslation'
 import Image from 'next/image'
+import Link from 'next/link'
 import posthog from 'posthog-js'
-import { BLOG_URL, CHANGELOG_URL, DISCORD_INVITE, DOCS_URL, GITHUB_URL } from '../../const'
+import { BLOG_URL, CHANGELOG_URL, CAREER_URL, DISCORD_INVITE, DOCS_URL, GITHUB_URL } from '../../const'
 
 type DyoNavbarProps = {
   className?: string
@@ -26,20 +27,23 @@ const DyoNavbar = (props: DyoNavbarProps) => {
           />
         </div>
       </div>
-      <a className="sm:ml-auto sm:px-4 md:px-8 text-lg font-bold cursor-pointer" href={DOCS_URL}>
+      <a className="sm:ml-auto sm:px-4 md:px-8 text-lg font-bold cursor-pointer" href={DOCS_URL} target="_blank">
         {t('docs')}
       </a>
-      <a className="sm:px-4 md:px-8 text-lg font-bold cursor-pointer" href={BLOG_URL}>
+      <a className="sm:px-4 md:px-8 text-lg font-bold cursor-pointer" href={BLOG_URL} target="_blank">
         {t('blog')}
       </a>
-      <a className="sm:px-4 md:px-8 text-lg font-bold cursor-pointer" href={CHANGELOG_URL}>
+      <Link href="/career">
+        <a className="sm:px-4 md:px-8 text-lg font-bold cursor-pointer">{t('career')}</a>
+      </Link>
+      <a className="sm:px-4 md:px-8 text-lg font-bold cursor-pointer" href={CHANGELOG_URL} target="_blank">
         {t('changelog')}
       </a>
       <div
         className="sm:px-5 h-5 cursor-pointer ph-no-capture"
         onClick={() => {
           posthog.capture(`NavbarIconClicked: GitHub`, { url: GITHUB_URL })
-          window.open(GITHUB_URL, '_self', 'noopener,noreferrer')
+          window.open(GITHUB_URL, '_blank', 'noopener,noreferrer')
         }}
       >
         <Image
@@ -55,7 +59,7 @@ const DyoNavbar = (props: DyoNavbarProps) => {
         className="h-5 cursor-pointer ph-no-capture"
         onClick={() => {
           posthog.capture(`NavbarIconClicked: Discord`, { url: DISCORD_INVITE })
-          window.open(DISCORD_INVITE, '_self', 'noopener,noreferrer')
+          window.open(DISCORD_INVITE, '_blank', 'noopener,noreferrer')
         }}
       >
         <Image src="/logo-discord.svg" width="20px" height="20px" alt={t('discordAlt')} layout="fixed" />
