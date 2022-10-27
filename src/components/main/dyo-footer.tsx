@@ -103,7 +103,10 @@ const DyoFooter = (props: DyoFooterProps) => {
           {t('common:copyright')}
         </label>
         <Link href="/tos">
-          <a className="cursor-pointer ml-0 text-center basis-1/3 lg:text-left lg:ml-auto lg:basis-auto" target="_blank">
+          <a
+            className="cursor-pointer ml-0 text-center basis-1/3 lg:text-left lg:ml-auto lg:basis-auto"
+            target="_blank"
+          >
             {t('common:termsOfService')}
           </a>
         </Link>
