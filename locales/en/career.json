@@ -1,0 +1,67 @@
+{
+  "title": "Cloud Engineer",
+  "body": [
+    "We're looking for our new Cloud Engineer teammate ready to leave an impact by developing the platform simplifying release & deployment management in Kubernetes & Docker. We think of our future teammate as someone who seeks ways to deliver value to users rather than something of not direct use to them."
+  ],
+
+  "paragraphs": [
+    "About the job",
+    [
+      "As Cloud Engineer, you'll help us deliver the most reliable and performant experience for our customers and keep our existing infrastructure stable. You'll work on every single piece of our infrastructure and touch every single one of our applications with the support of our existing infrastructure team. As we continue to grow, you'll help our infrastructure scale in a steady, reliable way that is rarely about the hottest, newest technologies, but often the mature, boring ones that keep pagers quiet and are easy to reason about.",
+      "You'll work with all the major cloud providers and on-prem solutions, while managing instances, services, and containers, along with their automation, orchestration, monitoring, and alert response. If you've ever wanted to work at a scale that few companies do, you'll find the right challenge here with us."
+    ],
+
+    "You're the ideal candidate if...",
+    [
+      [
+        "Technology isn't just an occupation but a profession for you. You're enthusiastic about it, open for improvements.",
+        "You'd describe yourself as patient, empathetic and having a good sense of humor",
+        "You’re independent, self-motivated and can stay efficient and productive without someone looking over your shoulder all day long."
+      ]
+    ],
+
+    "Our values",
+    [
+      [
+        "Stay lean - We strive for the greatest possible impact with the fewest number of employees. We empower our teammates with the most leveraged tools and efficient processes.",
+        "Default to open - We encourage and nurture open exchanges of knowledge and ideas — while acting with respect and regard for each other.",
+        "Think rigorously - We act and execute after careful thought and examination of known information, while acknowledging the risks we accept in its absence.",
+        "Say no - We aim to deliver exceptionally high value in a small set of focus areas. We willingly abstain from good ideas to give only the most promising paths the attention they deserve.",
+        "The best prevails - Whether an idea or an individual, the best will rise to the top at dyrector.io. Ideas we pursue can come from anywhere, and individuals gain responsibilities due to outperformance.",
+        "Global optimization - We believe that our mission — to make the workplace a source of learning and purpose — is the ultimate priority, above any single project, team, or individual."
+      ]
+    ],
+
+    "Preferred Qualifications",
+    [
+      [
+        "Self-motivated and proactive mindset",
+        "Experience with Golang / Typescript",
+        "At least 2 years of experience in DevOps or as a System Administrator",
+        "Strong experience with configuration and infrastructure automation using tools like Docker, Podman",
+        "Strong experience with monitoring and alerting systems",
+        "Ability to design and manage CI / CD pipelines",
+        "Experience in Linux/Unix Administration",
+        "Experience with management of networking and VPNs",
+        "Proven track record of being security conscious",
+        "Exceptional time management skills",
+        "Attention to detail and commitment to quality",
+        "Pragmatic decision making regarding human and financial costs associated with infrastructure."
+      ]
+    ],
+
+    "What we offer",
+    [
+      [
+        "Flexible work hours to develop the platform not only developers love but even my grandma can easily use.",
+        "Free to pick when to work at the office or stay remote.",
+        "Being part of a team innovating how IT companies think about release management and software deployment.",
+        "Working with top-notch technologies (Golang, TypeScript, Kubernetes, gRPC) on an everyday basis.",
+        "Have a well-rounded approach to problem solving."
+      ]
+    ],
+
+    "Contact us at jobs[@]dyrector[.]io"
+  ]
+}
+

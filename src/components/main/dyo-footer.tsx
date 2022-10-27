@@ -28,6 +28,7 @@ const CommunityLink = (props: CommunityLinkProps) => {
     <a
       className="pb-4 flex cursor-pointer ph-no-capture"
       href={url}
+      target="_blank"
       onClick={() => posthog.capture(`CommunityLinkClicked: ${label}`, { url })}
     >
       <Image src={image} width={18} height={18} />
@@ -89,7 +90,7 @@ const DyoFooter = (props: DyoFooterProps) => {
         <div className="flex flex-wrap pt-4 md:pt-0 basis-full lg:basis-2/6 justify-around">
           <Column label={t('common:getInTouch')} className="sm:basis-1/2 lg:basis-full">
             <div className="flex">
-              <CommunityLink image="/email.svg" label={EMAIL} url={`mailto:${EMAIL}`} />
+              <CommunityLink image="/email.svg" label={EMAIL} url={`#`} />
             </div>
           </Column>
           <Column label={t('common:career')} className="sm:basis-1/2 lg:basis-full">
@@ -102,17 +103,17 @@ const DyoFooter = (props: DyoFooterProps) => {
           {t('common:copyright')}
         </label>
         <Link href="/tos">
-          <a className="cursor-pointer ml-0 text-center basis-1/3 lg:text-left lg:ml-auto lg:basis-auto">
+          <a className="cursor-pointer ml-0 text-center basis-1/3 lg:text-left lg:ml-auto lg:basis-auto" target="_blank">
             {t('common:termsOfService')}
           </a>
         </Link>
         <Link href="/privacy">
-          <a className="cursor-pointer pl-0 text-center basis-1/3 lg:text-left lg:pl-10 lg:basis-auto">
+          <a className="cursor-pointer pl-0 text-center basis-1/3 lg:text-left lg:pl-10 lg:basis-auto" target="_blank">
             {t('common:privacyPolicy')}
           </a>
         </Link>
         <Link href="/cookies">
-          <a className="cursor-pointer pl-0 text-center basis-1/3 lg:text-left lg:pl-10 lg:basis-auto">
+          <a className="cursor-pointer pl-0 text-center basis-1/3 lg:text-left lg:pl-10 lg:basis-auto" target="_blank">
             {t('common:cookiePolicy')}
           </a>
         </Link>

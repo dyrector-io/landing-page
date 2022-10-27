@@ -5,6 +5,7 @@
   "pages": {
     "*": ["common", "head", "footer"],
     "/": ["index"],
+    "/career": ["career"],
     "/tos": ["tos"],
     "/cookies": ["cookies"],
     "/privacy": ["privacy"]
