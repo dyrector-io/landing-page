@@ -84,7 +84,7 @@ const SectionHeader = (props: SectionHeaderProps) => {
         </div>
       </div>
       <div className="basis-full md:basis-1/2 text-center md:text-right pt-16 md:pt-0">
-        <Image src="/header-ship.svg" layout="intrinsic" width={500} height={300} />
+        <Image src="/header-ship.svg" layout="intrinsic" width={500} height={300} alt={t('headerImgAlt')} />
       </div>
     </div>
   )

@@ -8,22 +8,27 @@
 
 <url>
   <loc>https://dyrector.io/</loc>
-  <lastmod>2022-10-20T11:53:47+00:00</lastmod>
+  <lastmod>2022-10-28T13:37:16+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://dyrector.io/career</loc>
+  <lastmod>2022-10-28T13:37:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://dyrector.io/tos</loc>
-  <lastmod>2022-10-20T11:53:47+00:00</lastmod>
+  <lastmod>2022-10-28T13:37:16+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dyrector.io/privacy</loc>
-  <lastmod>2022-10-26T10:53:47+00:00</lastmod>
+  <lastmod>2022-10-28T13:37:16+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://dyrector.io/vookies</loc>
-  <lastmod>2022-10-26T10:53:47+00:00</lastmod>
+  <loc>https://dyrector.io/cookies</loc>
+  <lastmod>2022-10-28T13:37:16+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
