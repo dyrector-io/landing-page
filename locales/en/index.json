@@ -21,6 +21,7 @@
     "collaboration": "collaboration"
   },
   "headerText": "dyrector.io is an open-source Internal Developer Platform that turns deployments of your services in Docker & Kubernetes as simple as you want them to be without vendor lock-in.",
+  "headerImgAlt": "Ship carrying containers. Illustration of dyrector.io",
   "getStartedForFree": "Get started for free",
 
   "designedForCompanies": {
@@ -39,13 +40,15 @@
       "section1Title": "Build delivery channels",
       "section1Details": "Create your own low-code CD workflow to deploy images out of your existing CI processes. No more messing with YAML files, you can focus on things that deliver value to your users.",
       "section2Title": "Autopilot your releases",
-      "section2Details": "Automate & power-up your industry standard release processes with integrations. Increase your team's efficiency & transparency with notifications, and enable your product managers and other non-technical stakeholders to self-service deployments."
+      "section2Details": "Automate & power-up your industry standard release processes with integrations. Increase your team's efficiency & transparency with notifications, and enable your product managers and other non-technical stakeholders to self-service deployments.",
+      "imgAlt": "Flowchart of different software versions made up of images for deployments."
     },
     "control": {
       "section1Title": "Multi-instance deployments",
       "section1Details": "Simplify complex release management processes with the multi-instance deployment capabilities of dyrector.io. Manage and execute deployments of different versions of your applications to multiple nodes. Fire up Docker & Kubernetes test environments on the fly.",
       "section2Title": "No vendor lock-in",
-      "section2Details": "Interact with your infrastructure in a PaaS-like manner with no strings attached. dyrector.io supports AWS, GCP, and Azure, as well. If you decide to stop using dyrector.io, you won't have to restart provisioning your infrastructure."
+      "section2Details": "Interact with your infrastructure in a PaaS-like manner with no strings attached. dyrector.io supports AWS, GCP, and Azure, as well. If you decide to stop using dyrector.io, you won't have to restart provisioning your infrastructure.",
+      "imgAlt": "Flowchart of how sponsors, or vendors are able to distribute different versions of applications to multiple customers."
     }
   },
 
