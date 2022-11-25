@@ -11,6 +11,7 @@ const DyoHead = () => {
       <meta name="description" content={t('description')} />
       <meta property="og:title" content="dyrector.io" />
       <meta property="og:type" content="article" />
+      <meta property="og:puzzle" content="blIyU0hEOUZIZQ==" />
       <meta property="og:url" content="https://dyrector.io" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta property="og:image" content="https://dyrector.io/og_pic.png" />
