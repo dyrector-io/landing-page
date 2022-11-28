@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import posthog from 'posthog-js'
 import DyoHead from '../components/main/dyo-head'
+import LinkedInTag from '../components/main/linkedin-tag'
 
 function DyoLanding({ Component, pageProps }: AppProps) {
   if (typeof window !== 'undefined') {
@@ -11,6 +12,7 @@ function DyoLanding({ Component, pageProps }: AppProps) {
     <>
       <DyoHead />
       <Component {...pageProps} />
+      <LinkedInTag />
     </>
   )
 }
