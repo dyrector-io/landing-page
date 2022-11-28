@@ -23,6 +23,7 @@ module.exports = {
                 'dark': '#161d31',
                 'error-red': '#ea5455',
                 'warning-orange': '#ff9f43',
+                'light-cyan': '#00EBD7',
             },
             height: {
                 '128': '32rem',
