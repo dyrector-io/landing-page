@@ -62,6 +62,8 @@ const DyoFooter = (props: DyoFooterProps) => {
   const { className } = props
   const { t } = useTranslation('footer')
 
+  const actualYear = new Date().getFullYear()
+
   return (
     <div className={className}>
       <div className="flex flex-wrap mb-20 pt-36">
@@ -101,7 +103,7 @@ const DyoFooter = (props: DyoFooterProps) => {
       </div>
       <div className="flex flex-row flex-wrap pb-5">
         <label className="basis-full lg:basis-auto text-center lg:text-left order-last lg:order-first pt-5 lg:pt-0">
-          {t('common:copyright')}
+          {actualYear} {t('common:copyright')}
         </label>
         <Link href="/tos">
           <a

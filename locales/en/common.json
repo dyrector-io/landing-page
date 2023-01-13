@@ -1,26 +1,26 @@
 {
-    "company": "Company",
-    "community": "Community",
-    "getInTouch": "Get in touch",
-    
-    "career": "Career",
-    "home": "Home",
-    "docs": "Docs",
-    "blog": "Blog",
-    "changelog": "Changelog",
-    "requestDemo": "Request a Demo",
-    
-    "discord": "Discord",
-    "github": "Github",
-    "twitter": "Twitter",
-    "linkedin": "LinkedIn",
+  "company": "Company",
+  "community": "Community",
+  "getInTouch": "Get in touch",
 
-    "logoAlt": "dyrector.io",
-    "githubAlt": "GitHub",
-    "discordAlt": "Discord",
+  "career": "Career",
+  "home": "Home",
+  "docs": "Docs",
+  "blog": "Blog",
+  "changelog": "Changelog",
+  "requestDemo": "Request a Demo",
 
-    "copyright": "©2022 Copyright Reserved by dyrector.io",
-    "termsOfService": "Terms of Service",
-    "privacyPolicy": "Privacy Policy",
-    "cookiePolicy": "Cookie Policy"
+  "discord": "Discord",
+  "github": "Github",
+  "twitter": "Twitter",
+  "linkedin": "LinkedIn",
+
+  "logoAlt": "dyrector.io",
+  "githubAlt": "GitHub",
+  "discordAlt": "Discord",
+
+  "copyright": "© Copyright Reserved by dyrector.io",
+  "termsOfService": "Terms of Service",
+  "privacyPolicy": "Privacy Policy",
+  "cookiePolicy": "Cookie Policy"
 }
