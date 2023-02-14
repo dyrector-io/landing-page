@@ -31,9 +31,11 @@ type SectionHeaderProps = {
 
 const SectionHeader = (props: SectionHeaderProps) => {
   const { className } = props
+
   const { t } = useTranslation('index')
 
   const textRef = useRef<HTMLSpanElement>(null)
+
   const textAnimationIndex = useRef<number>(0)
 
   const getAnimatedText = () => t(`compassForItems.${COMPASS_FOR_TEXTS[textAnimationIndex.current]}`)
@@ -58,6 +60,7 @@ const SectionHeader = (props: SectionHeaderProps) => {
         textAnimationIndex.current = (textAnimationIndex.current + 1) % COMPASS_FOR_TEXTS.length
 
         textRef.current!.innerText = getAnimatedText()
+
         textRef.current!.className = styles['animate-fade-in']
       }
     })
@@ -72,17 +75,20 @@ const SectionHeader = (props: SectionHeaderProps) => {
             <span ref={textRef}>{getAnimatedText()}</span>
           </div>
         </h1>
+
         <label>{t('headerText')}</label>
+
         <div>
           <button
             type="button"
             className={clsx(styles['button-gradient'], 'py-4 px-6 mt-6 font-bold rounded-sm')}
-            onClick={() => window.location.assign('https://docs.dyrector.io/get-started/overview')}
+            onClick={() => window.location.assign('https://app.dyrectorio.com')}
           >
-            {t('getStartedForFree')}
+            {t('getStarted')}
           </button>
         </div>
       </div>
+
       <div className="basis-full md:basis-1/2 text-center md:text-right pt-16 md:pt-0">
         <Image src="/header-ship.svg" layout="intrinsic" width={500} height={300} alt={t('headerImgAlt')} />
       </div>

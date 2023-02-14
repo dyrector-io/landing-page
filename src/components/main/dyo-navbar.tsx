@@ -1,8 +1,12 @@
 import clsx from 'clsx'
+
 import useTranslation from 'next-translate/useTranslation'
+
 import Image from 'next/image'
+
 import posthog from 'posthog-js'
-import { BLOG_URL, CHANGELOG_URL, DEMO_FORM_URL, DISCORD_INVITE, DOCS_URL, GITHUB_URL } from '../../const'
+
+import { BLOG_URL, CHANGELOG_URL, DISCORD_INVITE, DOCS_URL, GITHUB_URL } from '../../const'
 
 type DyoNavbarProps = {
   className?: string
@@ -10,6 +14,7 @@ type DyoNavbarProps = {
 
 const DyoNavbar = (props: DyoNavbarProps) => {
   const { className } = props
+
   const { t } = useTranslation('common')
 
   return (
@@ -26,6 +31,7 @@ const DyoNavbar = (props: DyoNavbarProps) => {
           />
         </div>
       </div>
+
       <a
         className="sm:ml-auto sm:px-4 md:px-8 text-lg font-bold cursor-pointer"
         href={DOCS_URL}
@@ -34,9 +40,11 @@ const DyoNavbar = (props: DyoNavbarProps) => {
       >
         {t('docs')}
       </a>
+
       <a className="sm:px-4 md:px-8 text-lg font-bold cursor-pointer" href={BLOG_URL} target="_blank" rel="noreferrer">
         {t('blog')}
       </a>
+
       <a
         className="sm:px-4 md:px-8 text-lg font-bold cursor-pointer"
         href={CHANGELOG_URL}
@@ -45,18 +53,12 @@ const DyoNavbar = (props: DyoNavbarProps) => {
       >
         {t('changelog')}
       </a>
-      <a
-        className="sm:px-4 md:px-8 text-lg font-bold cursor-pointer text-light-cyan"
-        href={DEMO_FORM_URL}
-        target="_blank"
-        rel="noreferrer"
-      >
-        {t('requestDemo')}
-      </a>
+
       <div
         className="sm:px-5 h-5 cursor-pointer ph-no-capture"
         onClick={() => {
           posthog.capture(`NavbarIconClicked: GitHub`, { url: GITHUB_URL })
+
           window.open(GITHUB_URL, '_blank', 'noopener,noreferrer')
         }}
       >
@@ -69,10 +71,12 @@ const DyoNavbar = (props: DyoNavbarProps) => {
           layout="fixed"
         />
       </div>
+
       <div
         className="h-5 cursor-pointer ph-no-capture"
         onClick={() => {
           posthog.capture(`NavbarIconClicked: Discord`, { url: DISCORD_INVITE })
+
           window.open(DISCORD_INVITE, '_blank', 'noopener,noreferrer')
         }}
       >
