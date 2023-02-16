@@ -77,7 +77,7 @@ const SectionHeader = (props: SectionHeaderProps) => {
         </h1>
 
         <label>{t('headerText')}</label>
-
+        <label className="pt-4">{t('headerText2')}</label>
         <div>
           <button
             type="button"

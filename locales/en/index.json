@@ -20,7 +20,8 @@
     "workflows": "workflows",
     "collaboration": "collaboration"
   },
-  "headerText": "dyrector.io is an open-source Internal Developer Platform that turns deployments of your services in Docker & Kubernetes as simple as you want them to be without vendor lock-in.",
+  "headerText": "Imagine that Heroku meets Portainer and then gets combined with fly.io – that’s dyrectorio. It enables teams to build up their software delivery pipeline like building blocks. ",
+  "headerText2": "dyrector.io is an open-source container management platform that helps software teams to manage releases & deployments efficiently.",
   "headerImgAlt": "Ship carrying containers. Illustration of dyrector.io",
   "getStarted": "Get started",
   "watchDemo": "Watch the demo",

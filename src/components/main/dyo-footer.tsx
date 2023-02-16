@@ -6,6 +6,7 @@ import posthog from 'posthog-js'
 import Link from 'next/link'
 import {
   BLOG_URL,
+  CAREER_URL,
   CHANGELOG_URL,
   DISCORD_INVITE,
   DOCS_URL,
@@ -18,7 +19,7 @@ import {
 interface CommunityLinkProps {
   image: string
   label: string
-  url: string
+  url?: string
 }
 
 const CommunityLink = (props: CommunityLinkProps) => {
@@ -93,11 +94,11 @@ const DyoFooter = (props: DyoFooterProps) => {
         <div className="flex flex-wrap pt-4 md:pt-0 basis-full lg:basis-2/6 justify-around">
           <Column label={t('common:getInTouch')} className="sm:basis-1/2 lg:basis-full">
             <div className="flex">
-              <CommunityLink image="/email.svg" label={EMAIL} url="#" />
+              <Image src="/email.svg" width={18} height={18} /> <span className="ml-2">{EMAIL}</span>
             </div>
           </Column>
           <Column label={t('common:career')} className="sm:basis-1/2 lg:basis-full">
-            {t('careerText')}
+            <Link href={CAREER_URL}>{t('careerText')}</Link>
           </Column>
         </div>
       </div>
