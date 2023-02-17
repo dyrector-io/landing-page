@@ -17,6 +17,10 @@ const SectionDesignedfc = (props: SectionDesignedfcProps) => {
       <div className="pt-9 text-slate-300 bold text-xl font-bold max-w-lg mx-auto">
         {t('designedForCompanies.title')}
       </div>
+      <a
+        href="https://www.producthunt.com/posts/dyrector-io?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-dyrector&#0045;io"
+        target="_blank"
+      ></a>
       <div className="pt-8 flex justify-around 2xl:justify-between flex-wrap">
         {items.map((it, index) => (
           <div className="flex flex-col w-48 pt-8" key={it}>
