@@ -14,7 +14,7 @@ const SectionOSS = (props: SectionOSSProps) => {
   return (
     <div className={clsx('text-center mt-48', className)}>
       <DyoTextBox title={t('oss.title')} textClass="py-6">
-        {t('oss.details1')}
+        {t('oss.details')}
       </DyoTextBox>
       <GitHubButton
         href="https://github.com/dyrector-io/dyrectorio"
@@ -25,7 +25,11 @@ const SectionOSS = (props: SectionOSSProps) => {
         {t('oss.star')}
       </GitHubButton>
       <div className="pt-8 text-slate-300 italic font-thin">{t('oss.buttonSubText')}</div>
-      <div className="pt-12">{t('oss.details2')}</div>
+      <div className="mt-4 flex justify-center">
+        <a className="" href="https://opencollective.com/dyrectorio-platform" target="_blank">
+          <img src="https://opencollective.com/webpack/donate/button@2x.png?color=white" width="270" />
+        </a>
+      </div>
     </div>
   )
 }

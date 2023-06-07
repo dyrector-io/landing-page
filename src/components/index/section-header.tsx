@@ -132,7 +132,7 @@ const SectionHeader = (props: SectionHeaderProps) => {
           />
           <button
             type="button"
-            className={clsx(styles['button-gradient'], 'py-4 px-6 mt-6 font-bold rounded-md')}
+            className={clsx(styles['button-gradient'], 'py-3 px-6 mt-6 font-bold rounded-md')}
             onClick={() => window.location.assign('https://app.dyrectorio.com')}
           >
             {t('getStarted')}
@@ -140,7 +140,16 @@ const SectionHeader = (props: SectionHeaderProps) => {
           <button
             type="button"
             className={clsx(
-              'py-4 px-6 mt-6 ml-6 font-bold rounded-sm border-2 rounded-md border-neutral-300 text-neutral-300',
+              'py-3 px-6 mt-6 ml-6 font-bold rounded-sm border-2 rounded-md border-neutral-300 text-neutral-300',
+            )}
+            onClick={() => window.location.assign('https://docs.dyrectorio.com')}
+          >
+            {t('Docs')}
+          </button>
+          <button
+            type="button"
+            className={clsx(
+              'py-3 px-6 mt-6 ml-6 font-bold rounded-sm border-2 rounded-md border-neutral-300 text-neutral-300',
             )}
             onClick={() => toggleModal(true)}
           >

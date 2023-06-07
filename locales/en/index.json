@@ -75,8 +75,8 @@
 
   "oss": {
     "title": "dyrector.io is fully open-source, will always be...",
-    "details1": "Open-source products bring community-driven value to the world. We created dyrector.io for developers who'd rather not work on deployments and configurations instead of developing their solutions. We're looking for suggestions from developers to create the perfect deployment platform for them.",
-    "star": "Star",
+    "details": "Open-source products bring community-driven value to the world. We created dyrector.io for developers who'd rather not work on deployments and configurations instead of developing their solutions. We're looking for suggestions from developers to create the perfect deployment platform for them.",
+    "star": "Stars",
     "buttonSubText": "“As software eats the world, open source eats software”",
     "details2": ""
   }
