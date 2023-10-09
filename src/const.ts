@@ -8,7 +8,7 @@ export const CHANGELOG_URL = 'https://github.com/dyrector-io/dyrectorio/blob/dev
 export const GITHUB_URL = 'https://github.com/dyrector-io/dyrectorio'
 export const TWITTER_URL = 'https://twitter.com/dyrectorio'
 export const LINKEDIN_URL = 'https://www.linkedin.com/company/dyrectorio'
-export const OSS_FRIENDS_URL = 'https://www.dyrectorio.com/oss-friends'
+export const OSS_FRIENDS_URL = 'https://www.dyrector.io/oss-friends'
 export const DEMO_FORM_URL = 'https://forms.office.com/r/bZXWSigX00'
 
 export const INTEGRATION_LOGOS = [
