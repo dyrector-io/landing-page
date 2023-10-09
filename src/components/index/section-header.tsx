@@ -111,7 +111,7 @@ const SectionHeader = (props: SectionHeaderProps) => {
   }, [textRef, getAnimatedText])
 
   return (
-    <div className={clsx(styles.world, 'flex flex-wrap py-14 md:py-36 justify-between', className)}>
+    <div className={clsx(styles.world, 'flex flex-wrap pt-14 md:py-36 justify-between', className)}>
       <div className="flex flex-col md:basis-1/2">
         <h1 className="text-gradient font-sans-pro font-bold text-4xl mb-8 flex flex-wrap content-start h-20 sm:h-auto">
           {t('compassFor')}&nbsp;
@@ -120,16 +120,19 @@ const SectionHeader = (props: SectionHeaderProps) => {
           </div>
         </h1>
 
-        <label>{t('headerText')}</label>
-        <label className="pt-4">{t('headerText2')}</label>
+        <label className="pb-6">{t('headerText2')}</label>
         <div>
-          <img
-            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=380073&theme=neutral"
-            alt="dyrector&#0046;io - A&#0032;self&#0045;hosted&#0032;container&#0032;management&#0032;platform | Product Hunt"
-            width="250"
-            height="54"
-            className="mt-4"
-          />
+          <a
+            href="https://www.producthunt.com/posts/dyrector-io-3?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-dyrector&#0045;io&#0045;3"
+            target="_blank"
+          >
+            <img
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=412944&theme=neutral"
+              alt="dyrector&#0046;io - Open&#0045;source&#0032;SelfOps&#0032;platform&#0032;for&#0032;containers&#0046; | Product Hunt"
+              width="250"
+              height="54"
+            />
+          </a>
           <button
             type="button"
             className={clsx(styles['button-gradient'], 'py-3 px-6 mt-6 font-bold rounded-md')}
