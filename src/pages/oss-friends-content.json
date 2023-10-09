@@ -138,5 +138,10 @@
     "Name": "Spark.NET",
     "Description": "The .NET Web Framework for Makers. Build production ready, full-stack web applications fast without sweating the small stuff.",
     "Link": "https://spark-framework.net/"
+  },
+  {
+    "Name": "dyrector.io",
+    "Description": "dyrector.io is an open-source continuous delivery & deployment platform with version management.",
+    "Link": "https://dyrector.io/"
   }
 ]
