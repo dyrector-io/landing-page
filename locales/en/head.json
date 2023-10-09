@@ -1,6 +1,6 @@
 {
-  "title": "Continuous Delivery Platform - dyrector.io",
-  "motto": "Software delivery on the go without DevOps Specialists",
-  "description": "Open-source platform for engineers to simplify your releases in multi-instance deployments & configurations on Kubernetes & Docker.",
-  "ogDescription": "Open-source platform for engineers to simplify your releases in multi-instance deployments & configurations on Kubernetes & Docker."
+  "title": "dyrector.io @ platform",
+  "motto": "dyrector.io is a self-hosted continuous delivery & deployment platform with version management.",
+  "description": "dyrector.io is a self-hosted continuous delivery & deployment platform with version management.",
+  "ogDescription": "dyrector.io is a self-hosted continuous delivery & deployment platform with version management."
 }

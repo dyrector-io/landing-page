@@ -13,7 +13,7 @@ const Index: NextPage = () => {
       <DyoNavbar />
 
       <div className="flex flex-col text-bright">
-        <div className="text-center text-gradient font-sans-pro font-bold text-4xl pb-14">{t('termsOfService')}</div>
+        <div className="text-center text-gradient font-sans-pro font-bold text-4xl py-14">{t('termsOfService')}</div>
         {bodyText.map((it, index) => (
           <label key={index} className="text-sm pb-4">
             {it}

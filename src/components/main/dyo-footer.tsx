@@ -13,6 +13,7 @@ import {
   EMAIL,
   GITHUB_URL,
   LINKEDIN_URL,
+  OSS_FRIENDS_URL,
   TWITTER_URL,
 } from '../../const'
 
@@ -90,6 +91,7 @@ const DyoFooter = (props: DyoFooterProps) => {
           <CommunityLink image="/logo-github.svg" label={t('common:github')} url={GITHUB_URL} />
           <CommunityLink image="/logo-twitter.svg" label={t('common:twitter')} url={TWITTER_URL} />
           <CommunityLink image="/logo-linkedin.svg" label={t('common:linkedin')} url={LINKEDIN_URL} />
+          <CommunityLink image="/oss-friends.svg" label={t('common:oss-friends')} url={OSS_FRIENDS_URL} />
         </Column>
         <div className="flex flex-wrap pt-4 md:pt-0 basis-full lg:basis-2/6 justify-around">
           <Column label={t('common:getInTouch')} className="sm:basis-1/2 lg:basis-full">
