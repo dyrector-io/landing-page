@@ -12,8 +12,6 @@ const SectionDesignedfc = (props: SectionDesignedfcProps) => {
 
   const items = ['orchestration', 'agility', 'cloud', 'cont-integration', 'release-mg']
 
-  const breakText = (text: string) => text.split(' ').map(it => <div>{it}</div>)
-
   return (
     <div className={clsx('text-center mx-auto mt-16 mb-40', className)}>
       <div className="pt-9 text-slate-300 bold text-xl font-bold max-w-lg mx-auto">
@@ -28,7 +26,7 @@ const SectionDesignedfc = (props: SectionDesignedfcProps) => {
           <div className="flex flex-col w-48 pt-8" key={it}>
             <Image src={`/icon-${it}.svg`} layout="intrinsic" width={50} height={50} />
             <label key={index} className="text-slate-300 text-sm uppercase pt-4">
-              {breakText(t(`designedForCompanies.companies.${it}`))}
+              {t(`designedForCompanies.companies.${it}`)}
             </label>
           </div>
         ))}

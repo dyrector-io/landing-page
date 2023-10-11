@@ -147,7 +147,7 @@ const SectionHeader = (props: SectionHeaderProps) => {
             )}
             onClick={() => window.location.assign('https://docs.dyrectorio.com')}
           >
-            {t('Docs')}
+            {t('docs')}
           </button>
           <button
             type="button"

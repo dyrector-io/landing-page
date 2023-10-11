@@ -3,9 +3,19 @@ import useTranslation from 'next-translate/useTranslation'
 import DyoFooter from '../components/main/dyo-footer'
 import DyoNavbar from '../components/main/dyo-navbar'
 
-import OSS_FRIENDS_DATA from './oss-friends-content.json'
+const OSS_FRIENDS_URL = 'https://formbricks.com/api/oss-friends'
 
-const Index: NextPage = () => {
+type OSSFriend = {
+  href: string
+  name: string
+  description: string
+}
+
+type Props = {
+  OSSFriends: OSSFriend[]
+}
+
+const Index: NextPage<Props> = ({ OSSFriends }) => {
   const { t } = useTranslation('oss-friends')
 
   return (
@@ -19,14 +29,14 @@ const Index: NextPage = () => {
       </p>
 
       <div className="sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid gap-4">
-        {OSS_FRIENDS_DATA.map((item, index) => (
+        {OSSFriends.map((item, index) => (
           <div key={index} className="bg-gray-900 p-4 rounded-md shadow-lg">
-            <a href={item.Link} target="_blank" rel="">
-              <span className="text-center text-gradient font-sans-pro font-bold">{item.Name}</span>
+            <a href={item.href} target="_blank" rel="">
+              <span className="text-center text-gradient font-sans-pro font-bold">{item.name}</span>
               <br />
               <br />
             </a>
-            <span className="pt-8">{item.Description}</span>
+            <span className="pt-8">{item.description}</span>
           </div>
         ))}
       </div>
@@ -37,3 +47,14 @@ const Index: NextPage = () => {
 }
 
 export default Index
+
+export async function getStaticProps() {
+  const res = await fetch(OSS_FRIENDS_URL)
+  const data = await res.json()
+
+  return {
+    props: {
+      OSSFriends: data.data,
+    },
+  }
+}
