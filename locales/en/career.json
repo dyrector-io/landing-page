@@ -1,4 +1,5 @@
 {
+  "info": "Not accepting new applications.",
   "title": "Cloud Engineer",
   "body": [
     "We're looking for our new Cloud Engineer teammate ready to leave an impact by developing the platform simplifying release & deployment management in Kubernetes & Docker. We think of our future teammate as someone who seeks ways to deliver value to users rather than something of not direct use to them."
@@ -64,4 +65,3 @@
     "Contact us at jobs[@]dyrector[.]io"
   ]
 }
-

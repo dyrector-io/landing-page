@@ -6,6 +6,7 @@ import DyoNavbar from '../components/main/dyo-navbar'
 const Index: NextPage = () => {
   const { t } = useTranslation('career')
   const bodyText = t('body', undefined, { returnObjects: true }) as string[]
+  const infoText = t('info', undefined, { returnObjects: true }) as string[]
   const paragraphs = t('paragraphs', undefined, { returnObjects: true }) as string[]
 
   const renderParagraphs = (line: string | string[], index: number) => {
@@ -39,6 +40,8 @@ const Index: NextPage = () => {
   return (
     <div className="w-11/12 lg:w-5/6 xl:w-4/6 2xl:w-7/12 mx-auto min-h-screen ">
       <DyoNavbar />
+
+      <div className="my-8 text-base text-bright">Info: {infoText}</div>
 
       <div className="text-center text-gradient font-sans-pro font-bold text-4xl pb-14">{t('title')}</div>
 
